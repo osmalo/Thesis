@@ -1,0 +1,700 @@
+% Chapter 2
+\documentclass[12pt]{book}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=4cm]{geometry}
+\usepackage{natbib}
+\usepackage{multirow}
+\usepackage{caption}
+\begin{document}
+\chapter[KRI]{Key Risk Indicators: KRI}
+\label{Chapter2} % Change X to a consecutive number 
+\ref{Chapter2}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+The indicators generally are classified into three major classes: as measures of risk (KRI) and performance measures (``Key performance indicators" or KPI) and finally as control measures (``Key indicator control" or KCI) \cite{krause2010}\cite{scandizzo2005}. The latter serve to measure the effectiveness of specific controls in the process, indicating increased some chance or residual impact \cite{scandizzo2005}\cite{beasley2010}\cite{lam2006} while the KPI can determine how strategic performance of any organization evolves, it means they are measures for later stages and those measures are lacking of anticipation.
+
+Meanwhile, the development of metrics for determining the occurrence of an event with a probability level is in synthesis the creation of a KRI \cite{lam2006}. That said, it is important to add in the process of construction of the KRI, the level of risk tolerance after a study of aversion, because an intolerable event can translate high business losses that keep far away the companies in compliance with the objectives. In turn, the application of indicators depends largely on the sector in which businesses operate.
+
+The wholesale trade for example can have specific indicators such as the number of product losses for each type of goods sold so that the analyzes provides in specific periods of time, the following results: what are the products that generate value, which ones destroy value, which it is the evolution in certain period, in order to find those most critical products.
+
+But the challenge facing every organization lies not only in the identification and implementation of KRI in the business environment, but also in the way the company communicate to stakeholders, the level of importance and metrics implemented, because sometimes are confusing \cite{parmenter2015}. In this sense budgets play an important role since they start from setting goals at the beginning of each period and thus risk indicators should be focused on meeting these objectives.
+
+The accuracy of the KRI should reflect each negative impact, which corresponds on the figures of the companies, for this reason it is sometimes possible to confuse the key risk indicators KRI with performance indicators or KPIs. As example profitability indicators in an organization, such as returns of capital, return on assets or internal rates of return, are used to evaluate the performance of the organization but under no circumstances are classified as critical risk factors.
+
+For this reason, often the KRI indicators are pigeonholed in measuring operational risk, given that usually are parameters such as the number of failed operations, rotations inventory or personnel, number of failures in systems, frequencies, omissions, among others \cite{scandizzo2005}. In turn, they may be qualitative or quantitative although sometimes they lose objectivity because the metrics used are ambiguous or without the respective assumptions for prove their veracity.
+
+However, for purposes of this research project, the proposed application of the KRI falls squarely on the strategic objectives of the organizations generating an indirect link with KPI. Thus the results suggest an improvement in the way to measure the achievement of objectives through direct monitoring of KRI, allowing the possibility of exercises of comparison with the results of the indicators derived from other organizations.
+
+The chapter is organized as follows; first the basic definitions that generate disturbances and the consequent creation of key risk indicators are presented. Following is a brief description of the risk-based management as an administrative tool. Third, the adequacy of ranges used for the analysis and interpretation of results. Posteriorly indicators applied in the electricity markets are detailed and a proposal for those that best fit the analysis in question, with a rating between macro and micro indicators derived from this research and considering results from \cite{sioshansi2002} and finally a space for future discussions is porposed.
+
+\section{Risk analysis}
+The risk measurement is an exercise in lifelong learning corresponding to all members involved in the organization, given that to ensure sustainability is necessary to keep under control most variables that threaten business viability \cite{kaplan1997}.
+
+This exercise consists of three elements that work on a programmatically manner, first identify the risk given the impact that has each to limit the scope of the objectives, it means the first step is the classification. Second define and assess the possible impact they will have on the results if a materialization of risks is presented. Finally, thirdly the establishment of KRI defined as the tools to manage risk to an acceptable strategic level \cite{hertz1983}.
+
+Monitoring is very important because it is possible to predict with some certainty each adverse impact on business strategy, which is associated precisely to the perception of risk thrown by KRI \cite{hertz1983}\cite{lam2006}. Thus its possible to get agility in the reaction from risks behavior following the cycle of planning, addressing and control which comes from classical management theory \cite{hertz1983}\cite{jorion1996}.
+
+In this context, companies face a number of disruptors or disturbing that can cause the generation of many strategic risks and these in turn may go unnoticed given the amount, allowing in many cases not be studied in depth \cite{jorion1996}. From the KRI, the risk analysts can manage more concretely the existence of disruptors in anticipation of contingencies caused by risk events.
+
+The disruptors are a source of risk and come from a current market or a fortress of it \cite{renn2004}. This current, drives or transformed sectors, and given its nature can be beneficial or detrimental to ensure the operations. That generates scenarios for value creation or destruction from a corporate point of view, and in turn becomes an element for any decision.
+
+Disruptors can be classified into the following groups according to their level of impact on the strategic objectives of the companies given their nature and how they fit business areas:
+
+\begin{enumerate}
+    \item \textbf{Technology disruptors:} Associated with the need for technological progress to keep at the forefront organizations.
+    \item \textbf{Demographic Disruptor:} Responding to gender preferences and populations, adjusted to consumer habits.
+     \item \textbf{Regulatory disruptors:} Linked to changes that exert control entities for the proper functioning of markets.
+     \item \textbf{Economic Disruptors:} Presents in decisions involving normal functioning of organizations in crisis scenarios or expansion.
+     \item \textbf{Political Disruptors:} Concerning the physical locations where business activity are made and its relevance to the situation of developing countries or regions.
+\end{enumerate}
+
+However, understanding the operation of the disruptor and ranking as sources of risk, it is possible to establish a first definition of the KRI. The key risk indicators are indices developed to manage appetite and aversion implicit in the daily operations regarding the risks \cite{lam2006}. They can be ratios, volumes, amounts, percentages, days, months, monetary values, distances, capacities, rates and generally any measure adapted to the specific situation that is under analysis.
+
+A further step is the realization of monitoring risks, where it is common to use stoplights or states of situation on the KRI \cite{kaplan1997}, which can establish early warning and sometimes anticipate the materialization of severe events for business results. Thus within the control panels it's necessary to present current situations, trends and future outlook using visual media such as the use of colors in the states of situations.
+
+To understand the use of the states of situation using the following example is intended to illustrate in greater detail: Basel in its presentation requirements for the management of financial institutions, proposes a liquidity indicator is calculated by the following equiation \cite{repullo2011}:
+
+\begin{equation}
+\textrm{Financial Liquidity} =  \frac{\textrm{Liquid Assets}}{\textrm{net cash outflows}} \geq100\%
+\end{equation}
+
+The results show a percentage that refers to the amount of availability of cash owned by the company, to meet commitments and disbursements for the next 30 days \cite{repullo2011}.
+
+Basel III in their definitions proposed that the indicator exceeds 100\% given that the level of obligations of financial institutions is high \cite{basel2010}. Whereby, the regulation seeks to ensure compliance of operations in order to ensure sustainability in the system.
+
+Now, if the indicator is below 100\% according to the regulations of Basel the company will incur a liquidity risk which is defined as the inability to honor its commitments in the short term \cite{basel2010}, understanding these commitments as the materialization its risks. Similarly liquid assets are classified at level 1 and level 2, level 2 being those that can be sold on the market at prices lower than those recorded in book value \cite{basel2010}. This latter feature requires that in stress scenarios the company be seen in the obligation to provide immediate resources to honor commitments despite the existence of assets Level 2 reaffirming a lower limit of 100\%.
+
+That Said that it is evident the liquidity indicator for Financial Institutions Should be classified as KRI, it is possible That Given to monitor the risk of the company through ITS calculation. Similarly disruptive causing the risk (or source thereof) will be one of an economic nature because it directly affects the sustainability of the company in terms of profitability.
+
+For analysis and in line with the use of control charts, it's necessary to have a current situation from the latest financial figures reported, a trend about where you can go the indicator in the coming periods and then an estimate or perspective to it has projected. That said, each financial company for get internal results and the external analysts for independent manner, define a range over which can be in a critical, sustainable or appropriate measure, which will be called " risk stoplights" from the use of colors.
+
+\begin{itemize}
+\item Red: critical measure of liquidity.
+\item Yellow: Measure sustainable liquidity.
+\item Green: adequate measure of liquidity.
+\end{itemize}
+
+The figure \ref{Fig 7} offers a visual scheme for managing of the liquidity indicator that responds to the state situation (that place where he is) with the aim of taking corrective measures required. In the example you can see that the indicator is currently 105\% but the trend is to decrease to 101\% and he approaches to the minimum required level demanded by regulation.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig7}  
+\caption{Example considering liquidity}
+\scriptsize 
+\textbf{Source: Basel III}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 7}
+\end{figure}
+
+An study in 2009 found that 40\% of financial services companies, were in the process of adopting and developing KRI \cite{beasley2010}, however there is little information about what kind of KRI should be implemented and the effectiveness in operational risk \cite{beasley2010}. What is clear is the usefulness of such indicators in later stage the financial crisis unleashed in 2008 when risk measures were quite permissive.
+
+\section{Risk-based management $-$RBM$-$}
+Risk-based management is a corporate method that has gained importance in institutional boards, thanks to its positioning as a management tool \cite{davies2006}. For its realization it is necessary to go through four stages, which are,according to \cite{basak2001}:
+
+\begin{enumerate}	
+\item \textbf{Identification of the risk profile:} Classification level of appetite or aversion present in the organization in order to ensure all the efforts will be directed to the pursuit of goals, after the understanding of the different risk exposures.
+\item \textbf{Modeling and Quantification:} Measurement using mathematical tools or statistics previously identified risks, in order to integrate with business performance scenarios.
+\item \textbf{Risk Committee:} Usually headed by managers in order to determine the tolerance levels (maximum level of losses accepted), considering the results of the modeling approach and recommendations.
+\item \textbf{Monitoring of key risk indicators:} Tracking the results obtained after identifying disruptive and establishment of ``risk stoplights? to manage the situation states.
+\end{enumerate}
+
+The figure \ref{Fig 8} shows the distribution of risk appetite according to the ``risk stoplights? raised from arbitrary way. The scale has nothing to do with tolerance, as this will depend on the goals set by the organization.
+
+The transition from green color to yellow color indicates the existence of a limit that is being crossing in order to take an action to reduce risk (an example is the liquidity of financial institutions described previously, which when it reaches the yellow color level is a signal for the company that begins the analysis of a restructuring of its asset structure). Such actions may be insurance contracts, creation of provisions, sales of business units, among others.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig8}  
+\caption{Intervals for risk appetite}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 8}
+\end{figure}
+
+The red color is outside of appetite, and immediate action is required, insurance contracts or the registration of provisions, is not appropriate because the risk is material and is engaging the business operation. It is also possible measurement, to get the quantification of profits or profitability through more specialized measures such as value at risk on operating results \cite{scandizzo2005}, which will be analyzed in deep later.
+
+\section{Classifications of Risk-Based management}
+
+The evolution of markets in which the exchange of goods or services arises, is subject to internal and external conditions that define its operation, making them well suited for demonstration of risk scenarios \cite{basak2001} \cite{davies2006}. This is where the need for management tools designed to reduce the probable losses and exposure levels of risky systems against manifestations arises.
+
+Within the above context, we can identify some internal factors affecting electrical markets, such as: the spot market price, financial conditions, changes in regulations, investment, and the futures market, among others.
+
+Similarly, external factors such as selling wholesale power to meet the demand of a country or even the different forms of generation that are linked to different processes for obtaining energy, are a result of the presence of disruptors as physical availability network, or the use of natural resources in the Colombian case.
+
+Now, unquestionably for financial issues, trading limits depend on the initial conditions that allow to perform transactions, it means that financial situations are subject to the operation. In other words, from the operational point of view there are a series of physical conditions in order to ensure that the energy flow is not interrupted \cite{krause2010}, such as the good condition of the transmission network and programming, but also considered a series of intangible situations that without doubt affect supply, giving space to the inclusion of the financial component.
+
+Thus appear the contingent liabilities \cite{hurtado2007} \cite{beatty2002}, related to the ability to honor the businesses acquired from energy market participants. To better understand this situation can think of two scenarios, an operational scenario or tangible and the other one intangible or non-operational stage. The first has concentrated its development in studies of black outs \ref{newman2011} as a phenomenon that ensures supply, while the second scenario has been studied by analyzing the players but considering the players in an isolated way \ref{newman2011} \cite{dobson2007} \cite{overbye2005} without integrating generated links in the exchange of goods and services.
+
+Internal, external, tangible and intangible factors, all of them are subject to the global dispositions and they impact the stability of the system but with different severity \cite{whited2006}. For purposes of this research project the possibility of providing energy service without restrictions can be threatened thanks to impacts of international markets, intensification of conflict (terrorism), climatic factors, natural phenomena, among others, which are difficult to predict using models.
+
+Following this line, the risks can be classified according to their species and disturbing element considering the clasification made by \cite{hughes1975} in the following groups:
+
+\begin{enumerate}	
+\item \textbf{Market risk:} Is one that is derived from adverse movements in the economic variables belonging to the own market such as interest rates, exchange rates, prices of financial assets, commodity prices, prices of utilities, among others. Uncertainty regarding the evolution of such indicators is resulting in the risk from the market.
+\item \textbf{Credit risk:} It comes from the non-compliance of the obligations of the parties involved in the business (debtor). It is traditionally known as the risk of "default" where the commitments are not honored, despite the previous analyzes made to the granting of credit quota.
+\item \textbf{Liquidity risk:} In this classification we can aggregate all situations where companies are committed to their ability to meet their short-term obligations. Liquidity is the weak of the possession of resources readily available (liquid). This in turn can be divided into two: 
+\begin{enumerate}
+\item \textbf{Market Liquidity:} Comes from the difficulty to convert liquid assets in cash through operations performed directly on the market (sales of assets, pledge, lease, transfer).
+\item \textbf{Financing (or cash flow):} Derived from the inability to cope with short-term financial obligations and access to funding sources.
+\end{enumerate}
+\item \textbf{Legal risk:} In this group all the elements associated with contracts, tenders, billing and others that need to be signed and that cannot be legally enforceable in subsequent stages, giving space to materialization of contingencies.
+\item \textbf{Operational risk: } All losses associated with inadequate management of processes, technical failures, human errors, and affectation by damage to systems, among others. Studies for the electricity sector have focused on this type of risk management methodologies for developing and forecasting based on historical information and the application of new technologies \cite{king2001}.
+\item \textbf{Reputational risk:} Directly associated with actions committed by the company or by employees of the same, affecting the image and therefore the good name that is incident on the organizational strategy. This type of risk considered breaches of ethics, integrity and other conditions, which are against the values of the company \cite{power2009}.
+\end{enumerate}
+
+The last classification of risks proposes a vision that allows frame them thanks to its nature and source of perturbation. The figure \ref{Fig 9}, graphically proposes one scheme for the risk-based management, considering different elements \cite{basak2001}. There is possible to observe that operational risks become a group of independent importance and further comprises technological issues, corporate governance, and physical events.
+
+A second group from figure \ref{Fig 9} refers to all financial elements of management of monetary resources where market risk, liquidity, credit and legal are aggregated giving rise to a new exclusively monetary classification, where any problem falls on the profits and returns. Finally the administration of the managing entity proposes a third group where the main components are maintaining the financial soundness and the preservation of operational efficiency \cite{basak2001}. It is possible to note that in this proposal of scheme, the management is not the center, while supervision based on risk, picks up each component.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig9}  
+\caption{Proposal Scheme for Risk-Based management}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 9}
+\end{figure}
+
+\section{Key Risk Indicators (KRI) applied to the electricity sector}
+
+There have been many studies dedicated to understanding perturbations and the subsequent generation of indicators applied to the energy sector  \cite{renn2004} \cite{hertz1983} \cite{sioshansi2002} . However, they have been focused on understanding the operational events. Nevertheless and from studies developed by \cite{parmenter2015} \cite{krause2010} \cite{lam2006} and derivatives of this research proposal, It can set two large groups that can be called macro key risk indicators and micro Key risk indicators.
+
+The former have a global origin of the whole system and therefore are related to each functional element seen as a universe, while the latter have an internal source from each participating agent and therefore its management is the responsibility of each agent. This classification has a specific purpose and is the establishment of risk inductors, it means which of the components generate risk, under the top-down analysis (external) and the bottom up (internal).
+
+\subsection{Macro key risk indicators}
+
+With the proposed classification made above, the macro key risk indicators that respond to the environment and their characteristics, are listed below:
+
+\subsubsection{Percentage distribution of energy portfolio}
+This indicator risk arises due to the need to understand how it works the structure of power generation in each country or region from different resources \cite{awerbuch2006}. That is, if the energy comes from different sources, hydro, wind, solar, photovoltaic, thermal, nuclear, among others, since the risk exposure levels are different in every form of generation. For example generation concentrated on renewable sources such as water (hydro) has a high dependence on weather phenomena (perturbation) while the thermal generation is very sensitive to the availability of fuels (coal, oil, etc.).
+
+\subsubsection{Financial hedges}
+Are made from the use of financial derivatives intended to control exposure to market risk. This risk indicator tries to identify which is the volume of use of hedges with the aim to highlight elements under management and the risk tolerance possessing managers in front of the agents. This way if the company hires derivatives to hedge prices for raw materials, interest rates, exchange rates, and other variables; then their tolerance level is low, but not always a dynamic strategy of hedging, improve the results of the yields.
+
+\subsubsection{VAR of energy portfolio}
+
+Value at risk $-$VAR$-$, calculated based on the energy portfolio and energy scheduled for dispatch. This process is performed to obtain an economic estimate of potential losses that could arise as a result of movements of some variables in the operation. It can apply many measures deriving the level of risk exposure that is assuming a business and one of the most relevant that is applied in international markets is the VaR (Value at Risk). The energy sector adopts the method in order to establish whether there are deviations from the energy scheduled at the beginning of the day for be dispatched. In the Colombian case, if there are deviations around 5\% of the programmed energy, this will involve penalties by the operator and those penalties will fall in the power generator having problems with the dispatch \cite{denton2003}.
+
+\subsubsection{Blackouts}
+
+The phenomenon of blackouts has a lot of important implications for economies as they can be classified as a brake on the productive machinery. Therefore the recent studies on the stability of the energy system openly concentrated in the understanding of this phenomenon \cite{wang2016}. They are classified in the group of operational risk and have been studied through the use of mathematical techniques, statistics and even innovative methodologies such as artificial intelligence or complexity \cite{dobson2007}. Thus the possibility of prevent the blackouts, can even anticipate the generation of global losses due to the detailed study of the network and its degree of exposure. The results found by \cite{newman2011} defined the network as a complex dynamic system with many operational interactions that can be simulated to establish with any degree of certainty the degree of risk exposure, so as to allow forward a mitigation plan.
+
+\subsection{Micro key risk indicators}
+
+The concentration of efforts within organizations, related to the mitigation of risk, can decrease the degree of complexity associated with the operation of the electric system in some level. It is the company or agent, an important element in the performance of the market that has its own dynamic, independent, with self-learning and he is evolving through experience \cite{boccara2010}.
+
+That said, the internal dynamics of the agents responds to a system-integration process and therefore should not be treated randomly. Thus, arises the micro key risk indicators associated with the evolutionary process of the companies.
+
+\subsubsection{VAR applied to the financial results}
+
+Considering the technical in math and statistics, you can measure the maximum economic loss probably generated in a time horizon previously defined and based on certain confidence. It is applicable to any type of good, resource or asset that generates yields \cite{jorion1996}
+
+The calculation of VaR considering the definitions given by \cite{jorion1996} can be summarized by the following expression:
+
+\begin{equation}
+VaR = -W_0(R^{*} - \mu)
+\end{equation}
+
+Being:
+
+$W_0$ : Initial Investment
+
+$R$ = rate of return for the period with mean $\mu$ and standard deviation $\sigma$ 
+
+And then,
+
+$W_0$ = W (1 + R), the value of the investment at the end of the analyzed period.
+
+$W^*$ = W (1 + $R^*$), is the lowest value of the investment at a level of confidence ``c".
+
+$R^*$ = critical performance. 
+
+Where,
+
+The absolute loss related to the initial value is calculated and analyzed based on the following equation \cite{jorion1996}.
+
+\begin{equation}
+VaR = -W_0 \times R^{*}
+\end{equation}
+
+Thus, the VaR depends on a probability distribution associated with profitability $R^{*}$ is a function of $R$ and a level of trust established at the beginning of the analysis ``c".
+
+Therefore, the results mathematically can be calculated based on the following relationship:
+
+\begin{equation}
+P(R < R^{*})  = \int_{-\infty}^{R^{*}} f(R)\cdot dR = 1- c
+\end{equation}
+
+The figure  \ref{Fig 10} can represent the behavior of values around an average result (expected) and the risk component where R * is the expected value and critical profitability
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig10}  
+\caption{Probability distribution}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 10}
+\end{figure}
+
+One of the problems that have this risk indicator is the assumption that asset returns are distributed according to a distribution curve standardized probability \cite{jorion1996} but in practice this is not entirely true. Nevertheless the problem of aggregation of risks (those that affect the profitability) is diminished based on the assumption of normality that allows add them thanks to the assumptions.
+
+\subsubsection{Earnings at risk $-$EaR$-$}
+
+Is a methodology used in risk management of companies, and is considered as a tool for quantifying exposure to market variables \cite{chaffai2015}, which has subsequently been specializing thanks to the inclusion of operational risks. It is defined as the maximum likely net loss considering the behavior of disturbing variables that generate risks in the various accounts that make up the income statement. The result depends on two phases present in net profits, a first operational phase (which comprises up operating profit) and a second financial phase (which includes interest rates on loans, exchange rates and valuation of financial assets) [YO].
+
+In parallel with the methodology CFaR (Cash flow at risk) his development has evolved because for the companies the issue of uncertainty it is critical because of the high volatility stemming from macroeconomic variables, which become in disruptor and generate exposure. Thus, to meet these new requirements, some changes are made to traditional VaR, because models initially only considered the risk of assets \cite{chaffai2015}.
+
+\subsubsection{Operating earnings at risk  $-$EBITaR$-$}
+
+Operating profit at risk or the EBITaR, can be defined as the maximum losses from the operational point of view that can present the Ebit (operating income before interest and taxes) expected of a company and may occur with some degree of probability. The difference between the EBITaR and EaR is that for the first risk exposures come from perturbations that impacting revenue accounts, costs and expenses while in the second there is an additional element associated with interest rates, exchange rates and non-operating events.
+
+The Figure \ref{Fig 11} is a graphical interpretation for the EaR presented by \cite{valencia2010} in his research on the evolution of EaR for trading energy companies in 2002. The calculation of EBITaR and EaR evolves similarly although as mentioned above the first exposure is associated with perturbations presented in the income and expenses while the second includes all components of net income considering interest rate debt, exchange rates for investment in currencies different than the functional currency, exchange rates of liabilities, market valuation of financial assets, impairment tests, among others.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig11}  
+\caption{Distribution of EaR and EBITaR}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 11}
+\end{figure}
+
+Moreover, deviation of risk can be estimated as the difference between the value of the average of the distributions of the operating profit (EBIT) or of expected net profits, and the maximum loss that thanks to the influence of critical variables could occur estimated those market variables and simulated with a confidence level of 95\% \cite{gomez2010}.
+
+The implementation of these key risk indicators can decrease the risk that the company generates unexpected financial losses that can add volatility to their earnings generation and in the other side the value of its assets. In turn with the inclusion of tolerance, it can generate a tool very relevant for the administration because the equity required by the regulatory system as collateral to ensure compliance of transactions can be achieved \cite{zhao2015}
+
+\subsubsection{Duration GAP between assets and liabilities $-$DGAP$-$}
+
+The concept of duration is very useful because it is a risk indicator that measures the change in value of certain asset and liabilities against changes in the interest rate. It is defined as the weighted average of the different maturities of future cash flows on an investment, taking as weights the relative weight of each flow factor regarding the final assessment or sum of the flows to present value \cite{barreira1995}. Mathematically, it comes from the first derivative of price with respect to the interest rate.
+
+Similarly, it is possible to immunize investments, which refers to decreasing the difference between the duration of deposits in investments (e.g. life of the machine) and the duration of the obligations  (loans, bonds) in order to protect the deposits of capital against changes in interest rates. Because the decline in asset prices thanks to an increase in interest rates, will be more significant for those positions with the greatest difference in the durations, it mean less immunized.
+
+A company and its set of assets, is a portfolio with different returns, maturities and features. In the case of companies operating in the energy market it is very common to see one gap between the investment term and the term of the obligations acquired \cite{barreira1995}. This allows the mathematical development of financial instruments business for corporate risk management purposes. In this way:
+
+\begin{equation}
+EV  = \sum_{n=1}^{t}(\frac{FCF_{n}}{(1+Wacc)^{n}}
+\end{equation}
+
+Then,
+
+\begin{equation}
+\frac{\partial EV}{\partial Wacc}  = -\frac{1}{(1+Wacc)}\sum_{n=1}^{t}\frac{n\times FCF_{n}}{(1+Wacc)^{n}}
+\end{equation}
+
+It means, 
+
+\begin{equation}
+\textrm{D Modifed}  = -\frac{D}{(1+Wacc)}\end{equation}
+
+Where,
+
+\begin{itemize}
+\item {D} = Duration. 
+\item {EV} = Enterprise Value.
+\item {WACC} = Weighted Average Cost of Capital.
+\item {FCF} = free cash flow of the company estimated.
+\item {n} = projection horizon.
+\end{itemize}
+
+With this risk measurement methodology that focuses on the balance sheet, it is possible to obtain an approximation of the exposure of the market value of equity (equity value) against movements in interest rates. However, this measure allows directly manage the requirements demanded by the regulator of electrical systems related to minimum available capital.
+
+Duration GAP - is the result of the difference between the duration of net assets (enterprise value) and duration of financial liabilities (present value of obligations).
+
+\begin{equation}
+\textrm{D Modifed}   = D_{NA} - D_{O} \times \frac{VP_{O}}{EV}
+\end{equation}
+
+Where, 
+
+\begin{itemize}
+\item {VP} = Present Value of the Obligations. 
+\item {EV} = Enterprise Value.
+\end{itemize}
+
+Finally, the relative change of equity against changes in the interest rate will be determined based on the following relationship.
+
+\begin{equation}
+\frac{\partial Equity}{\partial Wacc}  = -\frac{EV(Wacc)}{(1+Wacc)}\times \textrm{D GAP}
+\end{equation}
+
+Table \ref{table1} shows the procedure for determining the level of exposure in companies with financial, thanks to the imbalance that occurs when the DGAP is very high. Thus when DGAP is close to zero it can immunize the balance of business and by the way decrease the sensitivity of equity to changes in interest rates, ensuring compliance with the requirements to participate in the market.
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{| l | c | c |}
+\hline
+DGAP & Change in interest rate & Change in equity value \\
+\hline \hline
+Positive & Increase & Decrease \\ \hline
+Positive & Decrease & Increase \\ \hline
+Negative & Increase & Increase \\ \hline
+Negative & Decrease & Decrease \\ \hline
+Zero & Increase & Zero \\ \hline
+Zero & Decrease & Zero \\ \hline
+\end{tabular}
+\caption{DGAP: Scenarios and sensitivities}
+\label{table1}
+\end{center}
+\end{table}
+
+Finally, the importance of managing durations for companies operating in the electricity market lies in the need to have sufficient financial strength to meet the commitments. The operator in Colombia has defined a system for the management of assets called the CROM for its acronym in Spanish [ ], and thereby seeks to keep under control the levels of equity in order to enable the operation in stress scenarios.
+
+\subsubsection{Financial Leverage $-$FL$-$}
+
+The concept of leverage comes from physics and refers to support point \cite{revello2004}. In this case there are two main components that are the sources of capital for use the assets. These sources are financial obligations to creditors (liabilities with cost) and its obligations to creditors shareholders (Equity). The sum of these two sources of funding will therefore net assets of the operation (NA) \cite{revello2004}.
+
+Besides, the two sources for raising capital (debt and equity) are funding with explicit cost, it means is done not spontaneously \cite{damodaran1996}. To understand the concept of spontaneous funding there are for example working capital of a company, which must remain in balance between short-term obligations (accounts payable) and short-term availability (accounts receivable). In summary, financial leverage determines the financial structure of a company directly and its cost.
+
+It is then,
+
+\begin{equation}
+\textrm{NET ASSETS} = D + E
+\end{equation}
+
+And, 
+
+\begin{equation}
+NOPAT = Ebit \times (1-Tax)
+\end{equation}
+
+\begin{equation}
+\textrm{Net Income} = NOPAT - Debt \times K_{d} \times (1-Tax)
+\end{equation}
+
+Because only the interest are missing in the calculation of net income.
+
+In the other hand
+
+\begin{equation}
+ROCE  = \frac{NOPAT}{NA}
+\end{equation}
+
+Therefore,
+
+\begin{equation}
+NOPAT  = ROCE \times (D + E) 
+\end{equation}
+
+And solving,
+
+\begin{equation}
+\textrm{Net Income}  = ROCE \times E + D \times [ROCE-K_{d}(1-Tax)]
+\end{equation}
+
+On both sides dividing by $E$
+
+\begin{equation}
+ROE  = ROCE + \frac{D}{E} \times [ROCE-K_{d}(1-Tax)]
+\end{equation}
+
+Where,
+
+\begin{itemize}
+\item {NOPAT} = Net operating profit after taxes 
+\item {Ebit} = Earnings before interest and taxes.
+\item {$K_{d}$} = Cost of debt (interest rate).
+\item {ROCE} = Return on capital employed.
+\item {ROE} = Return on equity.
+\item {E} = Equity
+\end{itemize}
+
+The return of assets deposited in a company depends primarily on profitability regardless of the funding sources (Roce) and in second place, the generation of value from operating profitability generated, because must exceed the cost of financing $[RSAN - Kd (1-Tax)]$. Finally, the coefficient associated with the generation of value is the degree of financial leverage, which can be interpreted in a scenario "ceteris paribus" as follows: a higher debt, higher return.
+
+The great contribution of this kind financial solution for measuring profitability and financial risk, is that there is not an optimal point for which a company should contract the debt, but rather a range \cite{revello2004}. Similarly, the application in companies in the electricity sector is very relevant [ ] because a highly leveraged company can present problems of management and thus give negative signals that limit business. In Figure \ref{Fig 12} we can see that the debt increases financial risk. Therefore there is a limit to which the return indicators are improved.
+
+\begin{equation}
+\textrm{Financial Leverage $-$FL$-$}  =  \frac{Debt}{Equity} 
+\end{equation}
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig12}  
+\caption{Evolution of debt vs. profitability}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 12}
+\end{figure}
+
+\subsubsection{Return on capital employed $-$ROCE$-$}
+
+The profitability that does not depend on the way it is financing the company is called return on capital employed \cite{revello2004}. And is that under the scenarios, return not considered interest for debt or dividends, hence its independence from capital sources. The definition depends on the performance required of resources or assets with which the organization has to generate profits \cite{damodaran1996}. In the case of companies in the energy market these resources are mostly tangible such as physical assets, power generation plants or transmission network, but can also be intangibles such as goodwill or recognition of know-how by the market thanks to the experience acquired over many years
+
+It is the return on capital or investment and is the most important for corporate monitoring, thanks to that calculate the generation of value, establishing business efficiencies or deficiencies.
+
+\begin{equation}
+ROCE  =  \frac{NOPAT}{\textrm{NET ASSETS}} 
+\end{equation}
+
+Where, 
+
+\begin{equation}
+\textrm{NET ASSETS}  =  D + E 
+\end{equation}
+
+The table \ref{table2} shows a scheme of financial balance, where the elements that are part of the net assets are investments or capital employed. From the right side of the balance sheet are debts and equity while the left side functioning operational needs (FON) and components of fixed assets, it means those whose duration is greater than 1 year.
+
+\begin{table}[htb]
+\centering
+\begin{center}
+\begin{tabular}{| l | c | c |}
+\hline
+\multicolumn{2}{|c|}{Financial Balance - Net Assets} \\ 
+\hline
+Functioning operational needs (FON) & Short term debt \\ \cline{1-2}
+\multirow{2}{4cm}{Fixed Assets} & Long term debt \\ \cline{2-2}
+& Equity \\ \cline{1-2}
+\end{tabular}
+\caption{Net Assets}
+\label{table2}
+\end{center}
+\end{table}
+
+Where, functioning operational needs are those resources with which account the organization to ensure the normal functioning of operations, in other words the cash cycle
+
+\begin{equation}
+\textrm{FON}  =  \textrm{accounts receivable} + \textrm{providers} + \textrm{Acruals (Laboral, taxes)} 
+\end{equation}
+
+\subsubsection{Weighted Average Cost of Capital $-$WACC$-$}
+
+In the administration of the resources with which a company generates operating profit, there is an opportunity cost that relates to the use of such resources. In other words the mix of funding sources (debt and equity) results in the cost for the use of all assets, consisting of contributions made by shareholders creditors and financial creditors \cite{damodaran1996}. In this regard, the cost of debt ($K_{d}$) and the equity cost ($K_{e}$) are the main components of cost of capital.
+
+\begin{enumerate}
+\item \textbf{Cost of debt:} refers to the interest rate associated with the loans and financial liabilities in general, where the charge is explicit and that is made by the use of these resources capital through the interest rate \cite{koller2010}. Among these types of sources of capital credits it can include short and long-term bond markets, deposits, bankcards, leasing, renting, and other liabilities with interest rate explicit. One way to calculate the $K_{d}$ is this called historical cost
+
+\begin{equation}
+\textrm{Historical cost}   = K_{d} =  \frac{\textrm{Financial expenses}}{\textrm{Financial debt}}
+\end{equation} 
+ 
+\item \textbf{Cost of Equity:} Associated with the level of risk that an investor has when he deposited financial resources in the operation of a company through shares or equity interests. This threatens the opportunity cost to a minimum return required on certain investment through preference levels, as investments in other assets are made. The classic model for determining the $K_{e}$ is known as the CAPM (Capital asset pricing model) \cite{koller2010}.
+
+\begin{equation}
+K_{r} =  R_{\textrm{Free Risk}} + \beta \times (R_{Market} - R_{\textrm{Free Risk}})
+\end{equation} 
+
+Where 
+\begin{itemize}
+\item $R_{\textrm{Free Risk}}$ is the rate of return in the absence of risk (zero risk)
+\item $R_{Market}$ is the market return that contains the asset or industry
+\item $\beta$ is the proportion of systematic risk (not eliminated diversifying)
+\end{itemize}
+
+In addition to the above, the value of $\beta$ will be greater if the company is highly leveraged, it means if the company has many financial obligations.
+
+\end{enumerate}
+
+After calculating the cost of independent funding sources ($K_{d}$, $K_{e}$) the relationship between the two will be understood as the weighted average cost of capital that is associated with the use of all assets that come from these sources. In addition to the calculation of this relationship it is important to consider the amount that the company has in financial obligations and equity. WACC can be found by the following expression \cite{revello2004}:
+
+\begin{equation}
+WACC =   \frac{\textrm{Debt}} {\textrm{Debt}+\textrm{Equity}} \times K_{d} \times (1-Tax) + \frac{\textrm{Equity}} {\textrm{Debt}+\textrm{Equity}} \times K_{e}
+\end{equation} 
+
+Where, 
+\begin{itemize}
+\item Net Assets = Financial Debt +  Equity
+\item $1-Tax$ = Tax savings from the debt, the interest is tax deductible
+\end{itemize}
+
+Finally for the company is strictly necessary to comply the following relation in order to be in comfortable position of profitability:
+
+\begin{equation}
+ROCE > WACC 
+\end{equation} 
+
+Which adds a constraint in terms of financial viability to be transferred to the execution of business between each agent system, in this case each agent involved in the exchange of cash flows from energy exchanges. In the figure \ref{Fig 13} it can clearly see the relationship between the level of weighted average cost of capital, cost of debt and cost of equity respectively.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig13}  
+\caption{Relationship between WACC and cost of funding sources}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 13}
+\end{figure}
+
+\subsubsection{Solvency}
+
+It arises from relationship between the total resources owned by the company and its financial obligations with borrowers or general creditors. In other words, the number of times that the assets are in the ability to respond for liabilities \cite{koller2010}. This relationship usually refers to the stability of medium and long term, because the assets are resources that can be exploited or utilized in order to generate operative income over the life of the organization. It is calculated by the following expression:
+
+\begin{equation}
+Solvency =   \frac{\textrm{Total Assets}} {\textrm{Total Liabilities}}
+\end{equation} 
+
+The solvency indicator must be greater than 1x because in order to determine the responsiveness, available resources in comparison with the obligations, them must be clearly superior. Thus it is possible to measure the continuity of operations in financial stress scenarios, or in other words when corporate stability is threatened. Figure \ref{Fig 14} shows the results of the solvency of the main agents of the Colombian market during 2015, where everyone meets the initial requirement (greater than 1) but the measures are not as homogeneous.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig14}  
+\caption{Solvency indicators in energy market in 2015 for the most important agents}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 14}
+\end{figure}
+
+Such indicators are one tool of financial management. In turn, it is a relationship of two extracted values which comes from the financial statements or other internal report for monitoring, with which it seeks to form a conception about the capacity of business to honor his compromises in medium and long term. In the same way, such indicators do not say anything for themselves, it is necessary compare them with:
+
+\begin{itemize}
+\item \textrm{The industry average} The average value of the industrial sector where the company operates. Each industry has its own characteristics, which arise from the exercise of the activities.
+\item \textrm{The indicator of previous periods} The average or the trend of previous periods, gives an idea of progress and setbacks that have in the company, it means to where the business is heading.
+\item \textrm{The objectives of the company} Allows understand administrative management over certain period of time, to achieve the proposed goals.
+\item \textrm{Other indices of the company} That have relationship with the calculated indicator and that may help explain their behavior.
+\end{itemize}
+
+\subsubsection{Liquidity}
+
+It can classify the liquidity as a branch of solvency in view that it refers to the capacity to meet the commitments that have maturities but in this case less than one year. These commitments can be accounts payable to banks, suppliers, taxes, debts with shareholders and short-term labor obligations, among others.
+
+Within the academic texts \cite{koller2010} \cite{damodaran1996} is possible to find proposed limits upper and lower, given that in extreme scenarios, the company must be in the ability to honor its commitments contracted. However this range depends on the sector that is evaluated and the economic environment faced. However, it is also necessary to stress that if the indicator is less than 1 the company presents liquidity risk, which establishes an immediate constraint.
+
+\begin{equation}
+Liquidity =   \frac{\textrm{Current Assets}} {\textrm{Current Liabilities}}
+\end{equation} 
+
+This indicator evaluates the company from the point of view of liquidation (all the operations are canceled), instead of considering it as a going concern, because the liabilities are not settled with the liquidation of current assets, but with income earned the sale thereof, which may be higher or lower than the carrying amount. In other words the real business capacity is determined by the cash flows that may be generated.
+
+Some forms of interpretation of this indicator can be:
+
+\begin{itemize}
+\item The higher the indicator, it's better. (Criterion from the point of view of the creditor as it is a signal that the company will meet its obligations), however, from the point of view of the company, if they have high liquidity ratios indicates that they have idle resources with high opportunity costs.
+\item From a management perspective, the index depends on the proper management of the assets, between profitability, risk and aversion. A conservative political, prefers to maintain a higher indicator in order to decrease its liquidity risk index, however, this adversely affects profitability.
+\item The best approach is to compare the index with the objectives of the company, the industrial average and the historical average of the company.
+
+\end{itemize}
+
+The figure \ref{Fig 15} relates the two elements associated with the strength of business to honor commitments, which can be cataloged in the short term or otherwise, long and medium term. In turn, some indicators aimed to improve returns, allow doing measures for the internal and external risk, establishing the preferences at the moment of make business between the agents in the system.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig15}  
+\caption{Categorization between liquidity and solvency}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 15}
+\end{figure}
+
+\subsubsection{Indebtedness}
+
+Is the financial risk and is understood as the inability to respond to their obligations with explicit cost, it means, the obligations that they have contracted with an interest rate associated \cite{damodaran1996}.
+
+In this vein in a single set it can integrate the liabilities of short-term and long-term without the distinction made as in the case of solvency. A very indebted company must generate sufficient operating income to meet interest payments plus principal payments of obligations in certain moments of time depending on the payment terms initially agreed.
+
+Usually bank loans have repayment traditional schemes where contributions are made up of principal and interest payments, like any kind of commitment to explicit interest rate. However, in the case of bonds are figures known as "bullet" where interests are paid during the period required, but the main are canceled at the end \cite{bouchaud2003}. Thus it is depending on the characteristic of the obligation and the impact on the cash flow.
+
+A first approach to the capacity to manage financial risk arrives from capital structure, defined as the proportion of capital that comes from equity contributions in relation to the proportion of capital comes that from financial lenders \cite{revello2004}.
+
+\begin{equation}
+\% Debt =   \frac{\textrm{Debt}} {\textrm{Debt + Equity}}
+\end{equation} 
+
+\begin{equation}
+\% Equity =   \frac{\textrm{Equity}} {\textrm{Debt + Equity}}
+\end{equation} 
+
+With the above it is possible to establish how exposed of the company regarding its financial risk, because a company with a high percentage of concentration in financial creditors, have greater need to generate operating profit to respond to the interests arising from the liabilities. On the other hand a company with high concentration ratio in equity must answer for profitability risk associated to opportunity cost required by investors. The indicator is calculated as follows.
+
+\begin{equation}
+Indebtness  =   \frac{\textrm{Net financial debt}} {\textrm{Ebitda}}
+\end{equation} 
+
+Here, the net financial debt is calculated by deducting from the total gross debt (liabilities with cost) the value of the cash balance available at the end of the period. Ebitda for its part is the operating profit before depreciation and amortization; it means it is the best approximation of operating cash flow without discounting the effect of interest \cite{revello2004}.
+
+The indicator is analyzed in the number of times because monetary units are canceled allowing the result be dimensionless. This way if the indicator is very high means that the debt is well above the Ebitda, increasing the risk of default.
+
+Around the world there are entities responsible for assessing the risk of companies that emit instruments in the public market \cite{saunders2006}. Those rating agencies are constructing metrics in order to measure the overall risk assessments comprising factors such as financial risk. Thus, thanks to studies developed by \cite{erb1996} in the 90's, can be determined that an adequate level occurs when the indicator is strictly less than 4x. This result becomes an additional restriction of the financial system to limit borrowing capacity, determining a limit for obligations with explicit cost and ensuring the stability of transactions.
+
+For electricity markets where transactions are made as of the need for energy dispatch, the analysis of the counterparty with which business is conducted is critical, given that a good assessment allows the generation of confidence when running the business.
+
+\subsubsection{Coverage}
+
+the coverage determination responds to the availability of financial resources of the organization to meet its financial obligations \cite{saunders2006}, but in this case only with respect to the interests  And it is that cash disbursements for the payment of the principal of the financial obligations do not pass through the statement of income and depend on the generation of free cash. Thus the relationship between the generation of operating profits and interests caused in the operation must be high to establish a good responsiveness.
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|l|r|}
+\hline
+\multicolumn{2}{|c|}{Income Statement} \\ \hline
+Operating Income & XXX \\
+\hline \hline
+(-) Cost of sales & xxx \\ \hline
+GROSS INCOME & XXX \\ \hline
+General Expenses & xxx \\ \hline
+EBITDA & XXX \\ \hline
+Depreciation - Amortization & xxx \\ \hline
+OPERATING INCOME (Ebit) & XXX \\ \hline
+(-) Financial Expenses  & xxx \\ \hline
+INCOME BEFORE TAXES & XXX \\ \hline
+(-) Taxes & xxx \\ \hline
+NET INCOME & XXX \\ \hline
+\end{tabular}
+\caption{Representation of Income Statement}
+\label{table3}
+\end{table}
+
+Table \ref{table3} shows the schematic for the income statement, where EBITDA is above of the interest, hence it's requires the submission of a financial balance between the two monetary amounts. That is, if the operational results are close to the interests, then coverage will be close to 1, materializing the existence of financial risk \cite{erb1996}. That said the ideal scenario is one in which the cover indicator is high, which ensures compliance with the obligations and improves the overall risk position because the cash flow does not discriminate sectors \cite{saunders2006}. Then the expression is presented for calculating the indicator.
+
+\begin{equation}
+Coverage  =   \frac{\textrm{EBITDA}} {\textrm{Financial Expenses}}
+\end{equation} 
+
+From the results found by \cite{erb1996} a minimum level of 2.5 that helps reduce the perception of risk in organizations is established. This level often becomes a ``covenant" or agreement with financial creditors to continue the risk rating assigned, and in the case of issuers in the market, quite useful for placements decreasing the risk of preference for their Titles.
+
+For the electricity sector in Colombia the most representative agents had the following behavior in 2015 according to Figure \ref{Fig 16} related to the coverage, allowing state that the overall market has stability from the point of financial view, but again the results are not homogeneous.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig16}  
+\caption{Coverage for principal agents in the Colombian energy market}
+\scriptsize 
+\textbf{Source: Review}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 16}
+\end{figure}
+
+\section{Future Studies}
+
+The measurement or evaluation is a fundamental part of the risk management process. Companies must begin by understanding that are taking risks and identify the need to add transparency and rigor to the most important according to the characteristics. Similarly, it is necessary to define the tolerance levels that are willing to take; objectives often are given when an effective organization for risk management is created \cite{buehler2003}.
+
+Amid this evolution in risk terms that requires the integration of all the business areas as well as all streams of the economy, it is necessary to have evolving tools and new trends for aggregation. For such purposes in the case of the financial sector, for example, Basel III \cite{repullo2011} have proposed standards for risk management solvency and liquidity by the entities that provide brokerage services, make transactions and collection of money.
+
+Such has been the extent of those proposed by the Basel committee, which even have demanded stress test in many institutions, to establish whether they have the ability to respond in the midst of adverse situations presented by the market standards. This, thanks to the recent financial crises that have led regulators to toughen the conditions to operate the system \cite{basel2010}, given that many problems were triggered by permissiveness in the indicators of solvency or liquidity.
+
+Basel defines a level of technical capital or capital called ``Tier 1" which consists of the ordinary capital and additional capital that does not depend on valuations and elements of difficult realization in cash. After that, they consider the traditional measure of risk-weighted assets, which responds to the measurement of each of the elements of the assets and their situation against the risk. For example the risk of the cash and equivalents may be zero but the risk of derivative instruments can never be zero. In the indicator Tier 1 in all scenarios must exceed 4.5\% according to the regulation \cite{basel2010}.
+
+Finally it can relate these two components (technical capital and risk-weighted assets - RWA -) resulting in the basic indicator Tier 1 solvency as follows:
+
+\begin{equation}
+Tier1  =   \frac{\textrm{Technical Capital }} {\textrm{RWA }}
+\end{equation} 
+
+Even the regulation goes further and proposes an indicator total solvency which is calculated by the sum of Tier 1 and Tier 2, where the Tier2, shows the relationship between the secondary capital (or capital that is not realizable, which comprising elements such as valorizations, hybrid instruments debt - equity, subordinated debt, among others) \cite{basel2010}. In turn, the sum of Tier1 and Tier2 must be above 8\%, meaning that the total solvency must exceed that value. Thanks to this, the financial sector has a global constraint that controls the evolution of operations.
+
+The description above is a starting point for future risk measurement. Since the risk in the corporate environment, defined as the uncertainty present in returns and in future values of cash flow, depends either on the characteristics of business associated with the type of activity and on the other hand of market conditions \cite{basel2010}. Therefore, the measurement requires a corporate risk management method that is set to each type of business. Thus for electricity market is possible to propose adjustments that related their capital capacity with the exposure of network assets used in the operation, it means transfer some lessons from Basel in the comprehensive context of business risks.
+
+These proposals for integration and application of methodologies have an explanation. For the regulator in the Colombian case, the requirements of minimum capital levels to ensure compliance of operations are nothing new. Since the year 20XXX , there established the CROM  [ ] as part of this trend to set minimum assurance capital requirements for agents involved in transactions. The CROM is a direct application of Basel when calculating technical heritage, which have been questioned with some factors that can be reviewed, such as the inclusion of valorizations because is a element with difficult realization in cash.
+
+CROM is defined as the ability to support for operations in the market of a particular agent, at a certain moment of time [ ] and is expressed in kWh based on the value at risk. On the other hand the value at risk for securing transactions depends on the energy traded, the price of the contracts signed for the dispatch of energy and the scarcity price. The latter indicates the value to which must be paid when the obligations of energy are required.
+
+The current scenario that passed the electricity sector, not only the Colombian but around the world, is the one to propose improvements and measuring different types of exposures. For example power generation in countries like France it is represented in nuclear 76\%; 11\% hydro; Conventional thermal 10\%; 3\% other sources \cite{awerbuch2006}. This makes the country is a minor user of fossil fuels, and having diverse sources of generation, that can become a reference for developing countries. In turn consumption in Colombia is about 15\% of what is consumed on French territory, but despite this there are lessons that can be taken such as portfolio optimization and supply flow amid stable financial conditions.
+
+The energy market in Colombia can trade more than 30 billion pesos, which represents about 3.5\% of GDP, in addition to maintaining productive resources of the country and an event of a power outage the supply, produce high costs. From the above, it have started studies that have been focused on the continuity of the network, it means in physical assets while for intangible issues such as financial tools, usually have been the traditional evaluation and classic measurement.
+
+For this reason the consideration of different elements as those proposed by Basel, such as the recognition of risk for each component of assets and subsequent integration into different schemes for measuring risk is a further step to the realization of this research project is other words, in the future will be possible to contemplate one measure weighted average by risk level applied to the sources of power generation, transmission networks, distribution and consumption, to thereby calculate a more critical solvency.
+
+\bibliography {Biblio}
+\bibliographystyle{plain}
+
+\end{document}
