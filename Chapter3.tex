@@ -1,0 +1,708 @@
+% Chapter 3
+\documentclass[12pt]{book}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=4cm]{geometry}
+\usepackage{natbib}
+\usepackage{multirow}
+\usepackage{caption}
+\begin{document}
+\chapter[Modeling]{Modeling Electricity Markets from a corporate perspective}
+\label{Chapter3} % Change X to a consecutive number 
+\ref{Chapter3}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+The energy market administration considers surveillance of business transactions of energy, his transport and delivery to final customer, enhancing the exchange of services between participants and ensuring cash flow through account management. One of the functions delegated to process of market administration is the portfolio management and trade recording of transactions in accordance with the dispositions of the regulation. According to this, this chapter is the approximation for ensures the transactions considering the financial equilibrium between agents.
+
+Playing a physical phenomenon through mathematics is in most cases a rather complex process, thanks to the number of variables involved \cite{boccara2010}. However, this has not stopped the progress of science, because the progress is reflected in problems expressed by simple equations, or with less quantity of parameters involved as relativity, gravity or kinetic dynamics, among others.
+
+Although often are these mathematical expressions considered as a simplistic approximation of reality, which is present in the laws of nature \cite{sole2009}; it is a responsibility of researchers to conduct the necessary tests, summarizing such laws or some phenomena although there is no absolute certainty. This obligation arises from the commitment that science has with humanity and is delegate from generation to generation.
+
+On the other side, social and economic sciences have been classified on a branch devoted to administrative management of companies and nations. For this reason, advances in research are not as crucial for development of humanity as are those results through biology, chemistry, physics or mathematics. In other words the social and economic sciences, with a lot of complex problems to solve, have a laggard position in its scientific treatment in comparison with other sciences areas.
+
+In this sense, finance is the result of a specific necessity of monetary control associated to countries, entities, individuals and world order \cite{damodaran1996}. Nevertheless, a development in the financial or economic field will not be decisive in the life expectancy of people as can be the discovery of a new vaccine, the treatment of a disease or even the study of the origin of the universe with the aim of understanding human dynamics \cite{kwapien2012}.
+
+But the research may propose a different way of doing things, after reviewing alternatives, not necessarily a better way but definitely different. The economy and finance of the companies are connected in this research proposal, allowing the development of a new methodology for action in everyday processes. Specifically the construction of this thesis concerns the description of the physical phenomenon associated with financial transactions that take place daily in the energy market, expanding systemic risk \cite{newman2011}.
+
+Therefore, this chapter is intended for the construction of models that describes the financial phenomena. Presenting an optimal result that establishes a new way of doing business under different constraints, and in absence of regulatory changes. In this way, the use of game theory, proposed by Morgenstern and Neumann \cite{neumann1947} subsequently deepened by Nash \cite{buttler2013} is the first approach of modeling. Secondly, the adjusted model is based on the theory based on agents \cite{krause2006} and complexity studied by \cite{boccara2010} in physical systems. This model is integrated with elements of simulation and optimization, and it will be a tool that considers the interactions between agents in seeking to ensure the stability of the system, from the strictly financial point of view.
+
+It should be noted that the applications that are made in this investigation have collected particularly the dynamics and the market organization, and also, a number of elements that impact the daily evolution. However many other elements are outside of the analysis because of the connection of factors is more complex. Such is the case of blackouts, maintenance schedule, and external risk from disasters, climatic variables, generation portfolio forms, asset availability, and regulation, among others \cite{apt2004}. The figure \ref{Fig 16} shows the scheme for internal and external components that affects the complexity of the system. 
+
+In the figure is possible to appreciate the diagram proposed in general for electricity market, and outside the scheme, the different variables that affects the operation. External factors like international markets, climatic events; internal conflict (in the case of Colombia) and economic crisis, among others are considered in the operational risk measures.
+
+Finally, although the results from this research are financial and economic, cannot rule out the integration of such operational elements. Thereby an interaction between the financial model and the operational model in the future represents a more comprehensive result associated with management and market stability.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig16}  
+\caption{Components that affects the complexity of the system}
+\scriptsize 
+\textbf{Source: Own calculations - XM}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 16}
+\end{figure}
+
+\section{First approximation to the physical phenomena}
+
+To describe specific phenomena, is in many cases a complex task. It means, even only using words for explain the behavior or the causes could be difficult if the analyst doesn't understand the process from the beginning to end. In some cases the uses of literature or researches are a good approximation in order to understand the process, which will be explained, but is necessary to in many cases the experience of the experts when start the process of interpretation.
+
+The figure number \ref{Fig 17} is a synoptic approximation of the financial physical process through a mental map. The goal is the profits maximization but there are different considerations for the electricity markets specifically. Variables like the financial problems with other agents, regulation, and climatic conditions, geopolitical affairs that affect the prices under diverse scenarios of demand. The uncertainty appears from operational conditions, the methodology applied in the demand forecast, and in general from all the information used for the agents at the moment of participated in the market, as a buyers or sellers.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig17}  
+\caption{Causes and effects of the problem}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 17}
+\end{figure}
+
+The studies in the electricity markets have being concentrated in the problem of assurance the supply from the generator perspective, it means producers and optimization capacity \cite{borenstein1999}. This research project is focused on the behavior of traders and producers, and the assurance of the supply of energy but not from operative perspective but rather from financial capacity viewpoint. This is the most important contribution of this work. 
+
+In equilibrium the goal is to identify the quantity of energy traded of each agent for ensuring the maintenance of the system, maximizing his profitability \cite{von2009}. This is the first part, and the second part is to consider the capability of each one for buy energy, evaluating different indicators like a financial risk, solvency, liquidity and exposure to different variables with uncertainty. Also, evaluate the conditions to make business with the counterpart, measuring his capital position and his financial support in order to honor the compromises. 
+
+The demand is independent between agents (buyers - sellers of energy) \cite{bohi2013} and they must decide how much energy should seek to reach the demand programed at the beginning of the day, while minimizing costs and maximizing the utility with less uncertainty. 
+
+In other words, the mechanism of the electricity market, function as a game, where it is possible to identify the players, the payoff function, actions, strategies and the equilibrium. All of the components come from a perfect competition assumption and in the middle of an oligopolistic environment.
+
+\section{Financial stability using Game Theory}
+
+Throughout this section the energy market as represented as a game in normal form. A game in the classical form consists of (1) players indexed by $i = 1, ..., n$, (2) strategies or more generally a set of strategies denoted by $x_i$, $i = 1, ..., n$ performed to each player and (3) payoffs or utility function $\pi_i$ ($x_1$, $x_2$, ..., $x_n$) , $i = 1,...,n$ won by each player. Each strategy is defined on a set $X_i$, $x_i$ $\in$ $X_i$, and according to \cite{camerer2015} the Cartesian product  of $X_1$ $\times$ $X_2$ $\times$...$\times$ $X_n$ is called the strategy space. Each player may have a unidimensional strategy or a multi-dimensionalstrategy depends on the level of interaction with the other agents and the expectations of profitability. 
+
+A one-way selection of strategies in the normal form also can be designed in the extensive form as an alternative to the formal form of game; it means more interactions and payoffs \cite{camerer2015}. So, sequential choices are possible and players may learn information between the selections of different actions, particularly a player may learn which actions were previously chosen or the outcome of a random event but in the specific game it is not so common.
+
+When simultaneous moves are repeated in stochastic games, if two players or more take actions in multiple periods, it can create a different type of dynamic game. And in the case of energy markets, the decision of buy or sell energy are performed in one specific period. For example the inventory models used in SCM  \cite{cachon2004} considers replenishment of goods and the decision for buy are made over and over again in multi periods games, which is not the case of electricity markets. Two major types of multiple-period games exist: without and with time dependence \cite{gibbons1997}.  
+
+In the multi-period game, the strategy for each player is the sequence of actions taken in all periods. In contrast with electricity markets, for decisions in order to reach the demand level at the beginning of the period, they have to decide, in shortage scenarios, how much energy should buy \cite{malandrino2015}. And how much energy can sell in surplus scenarios. The demand is realized and then leftover inventory is not necessary to be salvaged \cite{bohi2013}. But the last sales and buys are taken through stock exchange because the contracts have been signed previously.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig18}  
+\caption{Scheme of fictitious Algorithm}
+\scriptsize 
+\textbf{Source: According definitions given by \cite{yousefi2011}}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 18}
+\end{figure}
+
+Figure number \ref{Fig 18} is a representation of fictitious game where the agents can learn considering the experience of interaction and history \cite{yousefi2011}. Agents using the information determined the most likely strategy or best response in front of others that maximize the profits. Looking forward the situations, agents will implement strategies and considering the results in the next step of the game (day, month, year) the agents going to take the same strategy or different strategies.
+
+So, the energy market is a game that is not a zero sum, because it is possible to generate surplus from the first demand and must supply energy to others traders that buy, in comparison with the initial situation \cite{xiao2015}. It means the agents can trade energy, but in order to accomplish the compromises of dispatch, they must buy or sell the shortage or the surplus.
+
+$X$ = is the strategy of each trader where the amount of energy is defined to buy, but considering the quantity that the counterpart can sell, in other words after the analysis process which made the seller.
+
+$Utility$ = profit or payoff function, is the output and depends on X and actions taken around, to not generate losses. There are many variables that affect the system but we consider the most relevant in this case, the strategies and the quantity X. 
+
+The uncertainty comes from two aspects: energy demand and competitors because at the initial situation is not easy to know the strategy that will advance each trader, in other words the quantity of purchased energy, because could be less or more than the initial demand program \cite{weidlich2008}\cite{wolfram1999}. 
+
+The demand for each trader comes from the strategy and the characteristics of the business, a big trader can have a big demand and in the same way for small and medium traders. The figure \ref{Fig 19} shown the interactions between the agents, which have the possibility of buy or sell energy according the demand level. The central regulator has the responsibility of ensure the operation of the market and the compliance of the demand. Each program of demand is a new game, that's why the fictitious game can be established daily, monthly or annually.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig19}  
+\caption{Visualization of interaction situation}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 19}
+\end{figure}
+
+The supply has a statistical distribution, is assumed known to represent the possible values taken at one point in time, following the method proposed by \cite{cachon2004} and usually in different markets, depend of the generation sources, like hydrologic, nuclear, solar, kinetic, among others. 
+
+Each trader wants the quantity ``$x_i$" to meet demand requests. If there are missing should look for another trader in order to supply the required amount at a cost of rescue (recovery price), the trader buys at a cost ``$c_i$" and sold at a price $p_i$.
+
+Given that the problem is a market problem there is no storage costs because the energy must be dispatched at the time and the agents cannot save the energy. Lost sales cannot be recovered and there is no replacement of missing. 
+
+The only shared goal is to maximize the profits of the system and for each trader maximize his own profit. An energy dispatch in time $t$ is available immediately and has two moments of decision: the first is the time to choose how much energy purchased to face the moment of occurrence of demand. The second are transfers of surplus and coverage of missing that occurs after accomplish the satisfaction of the demand and is the result of transactions between agents, which is non-cooperative game \cite{gibbons1997}, and considering the development in the middle of a cooperative situation (to sell or buy in order to maximize the profits), that's why is guaranteed the algorithm convergence. The definitions are:
+
+\begin{itemize}
+    \item \textbf{N:} Number of Traders.
+    \item \textbf{A:} Set of actions to take each trader, power purchase decision.
+     \item \textbf{$c_i$:} Cost for unity (\$/kwh).
+     \item \textbf{$S_i$:} Sales.
+     \item \textbf{$X_i$:} Energy purchased vector.
+     \item \textbf{$p_i$:} Price (\$/kwh).
+     \item \textbf{$h_i$:} Surplus.
+     \item \textbf{$e_i$:} Shortage.
+     \item \textbf{$q_i,_j$:} energy needs from $i$ to $j$ when each demand are not reached.
+     \item \textbf{$m_i,_j$:} Transfer costs between $i$ and $j$. 
+     \item \textbf{$v_i$:} Recovery value.
+     \item \textbf{L:} Matrix of transfer costs. 
+     \item \textbf{D:} Demand.
+     \item \textbf{de:} Demand Vector.
+     \item \textbf{se:} Sales vector.
+     \item \textbf{he:} Surplus Vector.
+      \item \textbf{ee:} Shortage Vector.
+\end{itemize}
+
+\begin{equation}
+U_N^t =  \sum(p_i \times s_i - c_i \times x_i)) + \sum(p_i - v_i - m_{i,j} \times q_i) + \sum(q_{i,j} \times v_i)
+\end{equation}
+
+The function could be divided into two parts: the first part is the profit of each trader, which does not consider the maintenance and inventory management, in other words the first stage of the game. The second part involves the recovery of rescue values, plus the amounts of energy transfer from gamer $i$ to gamer $j$ to supply the missing demand. It is from the perspective of the agent-receiving surplus from other traders to supply shortages. 
+
+The third factor is the surplus that each trader sent to other recovering rescue (recovery) value. The optimal quantity is: 
+
+\begin{equation}
+x_i^* =  {x_i \forall \in N}
+\end{equation}
+
+Demand during the process is a random variable D, with distribution function DF. In this case DF is a Poisson distribution considering the study of the demand in a fictitious game as \cite{cachon2004} and adopted in his research in order to find the Nash equilibrium. The general probability function is:
+
+\begin{equation}
+f(k,\lambda) =  \frac{exp^{-\lambda} \lambda_k}{k!}
+\end{equation}
+
+Where k is the number of occurrences of the event. Is a positive parameter representing the number of times that is expected to occur \cite{cachon2004}. 
+
+The equilibrium is found through the inverse function evaluated at a one point, the point is the yield obtained between the differences in cost and price \cite{cachon2004} \cite{cure2009}. 
+
+\begin{equation}
+X^{*}=  F_{D}^{-1} \left (\frac{p_i - c_i}{p_i} \right)
+\end{equation}
+
+The trader's decision variable $X_i$, while taking the competitors strategy $X_j$ as given the best response (Nash equilibrium). The best response can be found, optimizing each trader's payoff function, it means net profit function described before. 
+
+\begin{equation}
+X_i^{*} (X_j) =  F_{D_i+D_j-X_j}^{-1} \left (\frac{p_i - c_i}{p_i} \right) \forall i = 1,2,3...N
+\end{equation}
+
+Last equation applied in order to find the equilibrium. 
+
+The vector of actions that considers the best answers from agents is:
+
+\begin{equation}
+x_i =  (de + \sum ee_{-i} - \sum he_{-i})
+\end{equation}
+
+In other words is a relationship between demand vector (initial requirements), vector of shortages because is possible to buy less quantity, and finally vector of surplus for sell to another trader. 
+
+Subject to, (restrictions): 
+
+\begin{equation}
+\sum q_{i,j} \leq H_i \forall i \in N
+\end{equation}
+
+\begin{equation}
+\sum q_{i,j} \leq E_i \forall i \in N
+\end{equation}
+
+\begin{equation}
+\sum x_i \leq D
+\end{equation}
+
+\begin{equation}
+q_{i,j} \geq 0;  x_i \geq 0; \forall i,n \in N
+\end{equation}
+
+In order to reach an optimum point, the objective is to find the equilibrium between agents, with best response according to purchasing process. 
+
+The vector of actions to be taken by each trader is the follow, where $x_i$ represents each action. 
+
+The scenario simulation is performed for a day of operation programming, which requires the release of energy to final consumers through retailers, whose responsibility is the fulfillment of such dispatch of energy. 
+
+\subsection{Optimization}
+
+The method used for optimization of the proposed model is the simplex method in order to find a utility maximization through its linear behavior \cite{vanderbei2014}. In general, the expression is: 
+
+\begin{equation}
+Max z = C^{T} \times x 
+\end{equation}
+
+Subject to 
+
+\begin{equation}
+Ax \leq b;  x \geq 0
+\end{equation}
+
+Applying the last mathematical expression to the proposed model: 
+
+\begin{equation}
+Max [U_N^{t} (x)]
+\end{equation}
+
+The Simplex method is a method using the interaction with the aim of gradually improving the final estimation at each next step \cite{vanderbei2014}. It is an analytical method for the solution of problems whose main characteristic is linear programming but is in the ability to solve much more complex problems, without initial restrictions on the number of variables. The final outcome rests on an objective function to be maximized or minimized as appropriate and subject to the constraints identified \cite{vanderbei2014}.
+
+Nash equilibrium can represent an optimal scenario that ensures the function of the market considering different constraints. But, the equilibrium is not a obvious process because there are different methodologies used in order to find it \cite{von2009}\cite{krawczyk2000} and none of them are classified as the best. The problem could be the appearance of different scenarios or even when the time goes on. The last affirmation takes relevance because immediately the equilibrium proposed by Nash \cite{axtell1999} and applied in this specific problem, becomes unstable.
+
+\section{Model for measuring systemic risk for energy agents: General process and physical process using a complex aproximation}
+
+The expected return of an agent depends on the volume of transactions and the ability to generate capital profits associated with the purchase and sale of energy in the electricity market. In that way, profitability, risk position, capital availability, adequacy of investments in time frames, liquidity, solvency and the management of the debt, specifically ``outside capital" (financial liabilities with cost), are variables that must be in permanent evaluation.
+
+There are different variables considered in the decision process for buy or sell energy in the electricity market. Specifically from the financial perspective, previously in the chapter number 2 it defined the most important indicators, as a solvency, duration GAP, liquidity, leverage, covering and risk position among others. 
+
+It means, climatic variables, availability of generators, terrorism attacks, regulation reviews, hedges applied on international prices, international economic perspectives and others, are variables that this model doesn't consider in the financial risk evaluation context. But for future researches it will be possible, it means all of the variables related to the operational exposition will not be consider at this time.
+
+The figure number \ref{Fig 20}, is an adaptation from National institute standards and technology, considering the results developed by \cite{babic2014} in relation with the optimal functioning of the energy sector. But the results respond one question about the impact of electrical grid systems from operational perspective. It is possible to see that, there are outlines key entities and interactions inside the markets. The problem studied in this project is focused in trading and market management inside the market domain.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig20}  
+\caption{Optimal functioning of the energy sector}
+\scriptsize 
+\textbf{Source: \cite{babic2014}}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 20}
+\end{figure}
+
+According to the last paragraph, this research is concentrated in the description of the market modeling, considering only the financial exposure of each individual company and even consolidated as a holding. There are parameters, constants, and variables that are subject of modeling.
+
+The energy is an asset classified as a ``utility - commodity" and for that reason is considered inelastic in the short term \cite{bohi2013}, it will be the first constrain in the model. The second important constraint is that, the energy does not distribute dividends during the analysis horizon, because in this case the analysis are focused in the capacity of the commodity to be traded and the cash and equivalents generated, therefore the dividend is zero $\delta (t) = 0$.
+
+Is important to mention that the price $p_{t,i,j}$ and the cost $c_{t,i,j}$ are different, because depends on different negotiations process, in that sense the problem is not a symmetric problem because all the conditions are changing from contract to contract and the purchased energy to one agent is not always the energy sold in the same contract.
+
+In the same way, the quantity purchased from one agent, are not the same quantity sold of other agent which he has business. It means if one agent $i$ buy energy from the agent $j$ in the terms of one contract, is not necessary the same quantity sold by agent $j$ to agent $i$ in other contract. Quantities are independents.
+
+\begin{itemize}
+ \item \textbf{$\delta_{t,i}$} = 0 = Dividend 
+ \item \textbf{$p_{t,i,j}$} = The price at time $t$ for contracts, considered by the agent $i$ for buy energy from the trader $j$.
+ \item \textbf{$c_{t,i,j}$} = Cost of energy at time $t$ for contracts, considered by the agent $i$ for sell energy to the trader $j$.
+\item \textbf{$Q_{t,i}$} = Quantity of energy purchased by agent $i$ from agent $j$ at time t, considering the validity of contracts.
+
+\item \textbf{$S_{t,i}$} = Quantity of energy sold by agent $i$ from agent $j$ at time $t$ considering the validity of contracts.
+\item \textbf{$Wacc_{t,i}$} = Is the minimum expected return at time $t$, cost of capital for agent $i$ considering different capital sources.  
+
+\item \textbf{$kd_{t,i}$} = Interest rate, financial cost for agent $i$, at time $t$.   
+
+\item \textbf{$Roce_{t,i}$} = Return on capital employed at time $t$, for agent $i$. This return is independent of capital sources (debt or equity).
+
+\item \textbf{$OyM_{t,i}$} = Operative and management expenses from agent $i$, at time $t$ and it depends on management strategy.
+
+\item \textbf{$h_{t,i}$} = Consolidated expected return at time $t$ by agent $i$, $h_{t,i}$ = $Roce_{t,i}$ - $Wacc_{t,i}$. The value should be greater than 0\% establishing the generation value
+
+ \item \textbf{$D_{t,i}$} = Total debt of agent $i$, at time $t$ ``outside capital".
+ 
+ \item \textbf{$He_{t,i}$} = Quantity of surplus energy by agent $i$ at time $t$.
+ 
+\item \textbf{$Ee_{t,i}$} = Quantity of shortages energy by agents $i$ at time $t$.
+ 
+\item \textbf{$pb_{t}$} = Spot price in energy stock exchange, the price comes from the market and change according to demand and supply laws.
+
+\item \textbf{$EBIT_{t,i}$} = Operating income after discount expenses and cost by agent $i$ at time $t$ (Earnings before interest and taxes).
+ 
+\item \textbf{$pz_{t}$} = Scarcity price (given by the operator) and depends on the operative situation of the market.
+
+\item \textbf{$pmin_{t}$} = minimal price (given by the operator) CERE + FAZNI \cite{de2011}.
+
+\item \textbf{$VaR_{t,i}$} = Value at risk of financial operations form agent $i$, at time $t$.
+
+\item \textbf{$E_{t,i}$} = Equity value composed by subscribed capital, reserves, accumulated profit, valorizations, movements on intangible assets and others.
+
+\item \textbf{$SCOB_{t,i}$} = Support capacity of operations, financial capacity for operations (buys operations).
+
+\item \textbf{$SCOS_{t,i}$} = Support capacity of operations, financial capacity for operations (sales operations).
+
+\item \textbf{$DGAP_{t,i}$} = Difference between maturity of investment and maturity of liabilities for the agent $i$ at time $t$.
+
+\item \textbf{$EaR_{t,i}$} = Earnings at risk of agent $i$, at time $t$ that can be applied in earnings, Ebit, Ebitda, Cash Flow or Capital.
+
+\item \textbf{$CFaR_{t,i}$} = Cash flow at risk of agent $i$, at time $t$.
+
+\item \textbf{$EBITaR_{t,i}$} = Operating income at risk of agent $i$, at time $t$.
+
+\item \textbf{$Dem_{t,i}$} = Demand level for each agent.
+
+\item \textbf{$CC_{t}$} = Charge for confiability.
+
+\item \textbf{$CG_{t,i}$} = Cost of generation for each agent that has de capability of generate energy using different sources. 
+
+\item \textbf{$TD_{t}$} = Total Demand in the system, for one period of time. (The results are reached using a database for one specific year).
+
+\end{itemize}
+
+The objective of the agents is to make transactions in the market in order to reach the best profitability as they can, under the uncertainty conditions, specifically financial conditions from others. Generally regulator guarantees these kinds of situations, but, thanks to the inclusion of general measures of systemic risk like this research proposal, each agent can take a look to the financial situation from others.  
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig21}  
+\caption{Different levels for acting at the stock market}
+\scriptsize 
+\textbf{Source: \cite{medina2007}}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 21}
+\end{figure}
+
+The level of demand for each agent can be less (shortage) or higher (surplus) than the energy contracts that are signed. If the contracts are higher than demand level, the surplus will sell in stock exchange. The representation of the situation is shown in the figure number \ref{Fig 21}. And if the contracts are less than demand level, the shortage will be bought in stock exchange.
+
+\begin{equation}
+\sum_{n=1}^{t} Ee_{n,i} = EE
+\end{equation}
+
+\begin{equation}
+\sum_{n=1}^{t} He_{n,i} = HE
+\end{equation}
+
+In the scenario where the agent reaches its point of marginal equilibrium, it means where price of sell is equal to the cost $c_{t,i}$ = $p_{t,i}$ the financial equilibrium is not achieved because it is necessary pay the associated debt interest. In other words the operative equilibrium is not enough for ensure the continuity of the company in the market, because the next exposition is a downgrade (risk qualification) when his capacity for honor the obligations are compromised.
+
+Thus strategies for the agent $i$ at time $t$, can be defined below according to their expected returns $Roce_{t,i}$ and net income expected. There are two kinds of agents under this evaluation, first the traders and second the generators. Generally the objective is the same and the financial model of business too, but the principal difference is in the cost of generation because the trader does not generate electricity. Is common that one company combined the business between commercialization and generation of power.
+
+\subsection{Agents Profit}
+
+Each agent evaluates the decision process, considering variables involved in the physical phenomenon, in order to improve the performance in the market. The risk perception and the value generation depend on preferences, outcomes (decision for buy or sell energy to/from other agent after risk evaluation) and the penalties or awards inside of the framework of the decision \cite{bristow2014}. The process are shown in the figure \ref{Fig 22}.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig22}  
+\caption{Proposed agent-based model for modeling behavior}
+\scriptsize 
+\textbf{Source: Own calculations - \cite{bristow2014}}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 22}
+\end{figure}
+
+Then, the description of the physical process start with the multiplication between the amount of energy sold in contracts, and energy prices contracted, with different buyers becomes in the operative income. After, the product between energy purchased in contracts and the different costs from sellers will be the cost of sales. Income and cost of sales are the most important parts related to the construction of state of incomes and losses, which describes the physical process. Moreover the operative and management expenses, the quantity of surplus energy and the quantity of shortages that will be traded in the stock exchange considering the spot price.
+
+In the process, is necessary to include other obligations demanded by the operator or by the market itself. Those are for example, the capital capacity and the forced savings that works as a contribution to the stability of the system or to the taxes necessity from government.
+
+Earnings from operations generated in the purchase and sale of energy listed above, must also recognize the interest expense through the debt. It means financial equilibrium \cite{revello2004}. In the financial frame, the earnings are called EBIT (Earnings before taxes depreciation and amortization) or in other words operating income, which depends on business core and in the case of electricity market agents, the power transactions.
+
+\subsection{Profit and losses statement: Representation of the physical financial process for traders}
+
+The income state of the agent in the market is defined as follows:
+
+\begin{equation}
+U_{t,i} = \sum_{i,j=1}^{n}(S_{t,i,j}\times p_{t,i,j} - Q_{t,i,j}\times c_{t,i,j}) + (He_{i} - Ee_{i})\times pb_{t} - OyM_{t,i} - D_{t,i}\times Kd_{t,i}
+\end{equation}
+
+Where, 
+
+\begin{itemize}
+ \item \textbf{$U_{t,i}$} = Net profit for each agent (in absence of taxes).
+ \item \textbf{$p_{t,i,j}$} = The price at time $t$ for contracts.
+ \item \textbf{$c_{t,i,j}$} = Cost of energy at time $t$ for contracts.
+\item \textbf{$Q_{t,i,j}$} = Quantity of energy purchased by agent $i$ from agent $j$.
+\item \textbf{$S_{t,i,j}$} = Quantity of energy sold by agent $i$ to agent $j$.
+\item \textbf{$He_{t,i}$} = Quantity of energy surplus by agent $i$.
+\item \textbf{$Ee_{t,i}$} = Quantity of energy shortages by agent $i$.
+\item \textbf{$pb_{t}$} = Spot rice of energy in the stock exchange.
+\item \textbf{$OyM_{t,i}$} = Operative and management expenses from agent $i$.
+\item \textbf{$D_{t,i}$} = Total debt of agent $i$.
+\item \textbf{$kd_{t,i}$} = Interest rate, financial cost for agent $i$.
+ \end{itemize}
+
+The first part of the equation represents the quantity of energy through contracts, because there are differences between purchases (Q) and sold energy (S), which depends on the conditions signed in each contract, time, dispatch, availability, and guarantees among others.
+
+The second part considers the quantity through stock electricity market for reach the demand according to the shortage or also in order to obtain a profit using the surplus. The operation in the market suggest an intervention when the agents has or doesn't has energy, because all the energy available must be sold or purchased given that it is impossible to store ``the goods" in warehouses \cite{bohi2013}.
+
+The third and last part of the equation is the consideration of the operative expenses and the financial obligations related to interest. That's why the operating equilibrium cannot be zero, because all the financial capacity comes from the operational breakpoint (Ebit = 0).
+
+The consolidated expression defines the amount of money that determines the global operation for each agent (trader or generator) and is called ``profit and losses statement", using a financial perspective. Then, the energy will be obtained from the use of own resources (cash) and money that can be obtained through loans or even the equity (capitalization by shareholders).
+
+However, despite the fact that companies go through a thorough and ongoing evaluation in order to ensure that not compromised the financial system functionality, there are different variables and constraints that must be considered.
+
+The following definition is a simplification of the net profit, eliminating the financial expenses theoretically \cite{damodaran1996} (breakpoint):
+
+\begin{equation}
+Ebit_{t,i} = \sum_{i,j=1}^{n}(S_{t,i,j}\times p_{t,i,j} - Q_{t,i,j}\times c_{t,i,j}) + (He_{i} - Ee_{i})\times pb_{t} - OyM_{t,i}\end{equation}
+
+Then, for fulfillment of the sales in the market, traders must guarantee the disposition of risk, it means the value at risk associated to the sales.
+
+\begin{equation}
+VaR1_{t,i} = [(S_{t,i}+Dem_{t,i}-He_{t,i})\times (pz_{t} - p_{t,i})]\times 2
+\end{equation}
+
+Adjusted approximation, considering the definitions given by CROM ``Capacidad de respaldo de operaciones en el mercado" \cite{Ministerio2012} and adapted to the disposition of capital. This first value at risk is the exposition of risk only when the agents are selling energy to others. The coefficient number 2 is the enlargement of the impact in order to measure the VaR with 2 standard deviations; it means 95\% of confidence.
+
+Where, 
+
+\begin{itemize}
+ \item \textbf{$Dem_{t,i}$} = Demand level for each agent.
+ \item \textbf{$pz{t}$} = Scarcity price (given by the operator according to the market conditions, in Colombia for example the exposition to Ni\'no phenomena and Ni\'na phenomena).
+\end{itemize}
+
+After the measure of the VaR1, considering the definitions given by CROM \cite{Ministerio2012} with the respective adjustments, it is possible to establish the capital capacity from the perspective of sales. The last sentence means that there are different mandatory conditions when the trader is buying and when the trader is selling. According to this, the following expression is the financial capacity. 
+
+\begin{equation}
+SCOS_{t,i} = \frac {E_{t,i} - VaR1_{t,i}} {(pz_{t} - p_{t,i})\times 2}
+\end{equation}
+
+Where,
+
+\begin{itemize}
+ \item \textbf{$SCOS_{t,i}$} = Support capacity or financial capacity in order to respond for sell agreements.
+ \item \textbf{$E{t,i}$} = Equity value of each agent.
+\end{itemize}
+
+Then, there is another perspective from buys situation, because each agent must have different financial capacity according his position in the transactions. That means, if one agent wants to buy energy, the regulator measures his leverage capacity in order to honor the compromises because sometimes the payments are not in cash, which generates accounts receivables.
+
+For fulfill the buys in the market, traders must guarantee the disposition of risk, it means the value at risk associated to the buys.
+
+\begin{equation}
+VaR2_{t,i} = [(Q_{t,i}-Dem_{t,i}+Ee_{t,i})\times (p_{t,i} - pmin_{t})]\times 2
+\end{equation}
+
+Adjusted approximation considering the definitions given by CROM2 \cite{Ministerio2012} and adapted to the disposition of capital. This second value at risk is the exposition of risk only when the agents are buying energy to others. The coefficient number 2, again is the enlargement of the impact in order to measure the VaR with 2 standard deviations; it means 95\% of confidence.
+
+Where,
+
+\begin{itemize}
+ \item \textbf{$pmin_{t}$} = minimal price (given by the operator) for recognitions of at least the management cost and the public necessities CERE (Impuesto sobre la renta para la equidad) and FAZNI (Fondo de Apoyo Financiero para la Energización de las Zonas No Interconectadas) \cite{de2011}.
+
+\end{itemize}
+
+After the measure of the VaR2, considering the definitions given by CROM \cite{Ministerio2012} , it is possible to establish again, the capital capacity from the perspective of buys. The following expression considers the mandatory conditions when the trader is buying energy, in other words the financial capacity that comes from the financial statements and the position in the market must be guaranteed.
+
+\begin{equation}
+SCOB_{t,i} = \frac {E_{t,i} - VaR2_{t,i}} {(p_{t,i} - pmin_{t})\times 2}
+\end{equation}
+
+Where,
+
+\begin{itemize}
+ \item \textbf{$SCOB_{t,i}$} = Support capacity or financial buys capacity to respond the agreements.
+\end{itemize}
+
+\subsection{Constraints related to KRI}
+
+Constraints are established using the definitions given in the second chapter about KRI and the maximum or minimum levels in some cases in order to measure the total risk exposition. All the ratios and calculations are founded in a specific interval of time, in this case is possible to apply the calculations annually, monthly, daily or even hourly.
+
+Constrains are the follows:
+
+\subsubsection{Cover ratio}
+
+First constrain, the cover ratio that establishes the capacity of pay the financial obligations associated to the debt. In other words financial risk and it must be greater or equal to 2.5 according the definition given by \cite{tappeiner2010}
+
+\begin{equation}
+\frac {Ebit_{t,i}} {(D_{t,i} \times kd_{t,i})} \geq 2.5
+\end{equation}
+
+\subsubsection{Indebtedness}
+
+The second constrain is the level of indebtedness. This ratio is calculated because is necessary find the maximum level of debt that each agent can withstand before start a ``default" process. The level of maximum indebtedness depends on the generation of operating income and the level must be less or equal to 4 according re results given by \cite{tappeiner2010} \cite{achleitner2011} \cite{li2015}.
+
+\begin{equation}
+\frac {D_{t,i}} {Ebit_{t,i}} \leq 4.0
+\end{equation}
+
+\subsubsection{Aversion of risk}
+
+The third constrain, is the aversion of risk, the level of general tolerance defined, but it depends of the risk aversion allowed by the operator in order to ensure the fulfillment of the operations. There are 2 risk measures, for sell (VaR1) and for buy (VaR2) energy. In all case, should be more flexible the agreements for sale energy than agreements for buy. In the agreements for buy, the levels of requirements are higher as it to acquire a contractual obligation.
+
+The restrictions explain the total financial exposure that should be less or equal to 10\% of the equity for each agent in the case of sales, and less or equal to 20\% of equity in the case of buys following the definitions given by \cite {jorion1996}.
+
+\begin{equation}
+VaR1_{t,i}  \leq 10\% \times E_{t,i}
+\end{equation}
+
+\begin{equation}
+VaR2_{t,i}  \leq 20\% \times E_{t,i}
+\end{equation}
+
+\subsubsection{Financial leverage}
+
+The fourth constrain is related to financial leverage. The relationship between debt and equity is called financial leverage, because is the availability of capital for responding to financial debt and the mix between the capital sources (equity, debt) are the net assets. The ratio must be less or equal to 80\% according to \cite{kraus1973} and it depends on the business model. In commodities companies is usual to find ratios over 150\% or even in financial sector.
+
+\begin{equation}
+\frac {D_{t,i}} {E_{t,i}} \leq 80\%
+\end{equation}
+
+\subsubsection{Duration GAP}
+
+Fifth constrain is ``duration GAP". The result is the difference between maturity of investment and maturity of liabilities with financial cost, all of them in present value. If the ``duration GAP" is high, the company is exposed to an increase in the interest rate (market risk) because the equity value will be less if the rates go up. It means it is possible immunize the balance sheet \cite{bierwag1985}, for avoid market risk when the duration GAP is small or close to zero. The results given by [I'm] defined that DGAP can decrease the risk exposure.
+
+\begin{equation}
+0 \leq DGAP_{t,i}  \leq 1
+\end{equation}
+
+\subsubsection{EaR - EBITaR}
+
+The sixth constraint according to the risk aversion of each agent (company) and the calculation of the EaR and EBITaR depends of the management and his strategies for control in front of the risk \cite{valencia2010}. The limit comes from the corporate perspective and the budget for the present period or the following.
+
+\begin{equation}
+EaR_{t,i}  \leq 5\% \times U_{t,i}
+\end{equation}
+
+\begin{equation}
+EBITaR_{t,i}  \leq 15\% \times EBIT_{t,i}
+\end{equation}
+
+Where, $U_{t,i}$ and $EBIT_{t,i}$ are defined for present period or could be a forecast. 
+
+\subsubsection{Profitability}
+
+The seventh constrain is the best approximation to the return rate in comparison with the cost of utilization of assets, from operational perspective. The return of capital employed usually is estimated using the budget of the company and historical performance for next periods.  The return of capital employed must be greater than Wacc in order to ensure the profitability of the company \cite{tirole2010}. If the in-equation is satisfied, the company is in the process of generating value in the time, with the chance of improve the value for the next periods.
+
+\begin{equation}
+Roce_{t,i}  > Wacc_{t,i}
+\end{equation}
+
+\subsubsection{Solvency}
+
+The last constraint is proposed using the base from Basel III, for measure the solvency in a company of financial services. This kind of agents (companies) should have a solvency capacity according to the international requirements \cite{repullo2011}. It means it can use Risk Weighted Assets RWA, proposing the risk of each asset, and the most important assets in the case of market energy are the contracts and the fixed assets.
+
+\begin{equation}
+\frac {E_{t,i}} {Risk (Assets)} > 8\%
+\end{equation}
+
+Where, the Risk (Assets) is calculated according to the exposition of each asset, for example the transmission lines have a risk different in comparison with the accounts receivable or intangible assets. The result must be greater than 8\% according to definitions given by \cite{repullo2011} \cite{basel2010} and allowing the existence of ability for respond to the obligations in the medium and long term in the case of a bankruptcy.
+
+The relationship modeled will be the quantity of contracts between the agents, or in cash (transactions) for explain the behavior of the market or even is possible to consider the prices of buy or sell under the rules of the contracts. The figure number \ref{Fig 23} is a representation of interactions where the red lines are sales and the blue lines are buys in a market with 6 agents with the same business core. In this case 6 agents can represent an important share of the total market according his size or the volume of transactions.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig23}  
+\caption{Representation of interactions}
+\scriptsize 
+\textbf{Source: Risker - Internal model developed}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 23}
+\end{figure}
+
+\section{Profit and losses statement: Representation of the physical financial process for producers}
+
+Additionally to the trader's income, the operating profit of the producers will consider the cost of generation, and additional income like a capacity charge. The new variables come from the Colombian electricity markets and are referred to regulation and requirements. In absence of taxes the following equation describes the physical process.
+
+\begin{equation}
+U_{t,i} = \sum_{i,j=1}^{n}(S_{t,i,j}\times p_{t,i,j} - Q_{t,i,j}\times c_{t,i,j}) + CC_{t,i} (He_{i} - Ee_{i})\times pb_{t} - CG_{t,i}-OyM_{t,i} - D_{t,i}\times Kd_{t,i}
+\end{equation}
+
+Where,
+
+\begin{itemize}
+ \item \textbf{$CC_{t,i}$} = Charge for confiability. Is a remuneration scheme which allows investment in power generation resources that are necessary in order to ensure effectively the attention of energy demand in critical condition, according to \cite{rivier2000}.
+ 
+\item \textbf{$CG_{t,i}$} = Cost of generation, is the cost associated to: the utilization of generation sources, like the use of water (hydroelectric), coal (thermal), wind (Eolic) among others, and all the logistic necessary in the generation process (central plants, machines, turbines, reactors, dams).
+
+\end{itemize}
+
+Subjected with the same constraints exposed in the last subsection because the only change is the charge for confiability and the cost of generation.
+
+The regulator at the end of the period (year, month, day, hour) must satisfy the totally of demand in the market, and guarantee the dispatch at the beginning of the period related to interactions between the agents (transactions). Making good business under good financial conditions.
+
+\begin{equation}
+\sum Dem_{t,i} = TD_t
+\end{equation}
+
+\subsubsection{Optimization}
+
+The method used for optimization in the proposed model, again is the simplex method in order to find a utility maximization because according to the equation, the behavior is linear. The general expression and the constrains describes the physical phenomena in a linear way, that's why the derivative is an easy calculation for the equilibrium \cite{vanderbei2014}.
+
+In general the expression is 
+
+\begin{equation}
+Max z = C^{T} \times x 
+\end{equation}
+
+Subject to 
+
+\begin{equation}
+Ax \leq b;  x \geq 0
+\end{equation}
+
+Applying the last mathematical expression to the proposed model: 
+
+\begin{equation}
+Max [U_N^{t} (x)]
+\end{equation}
+
+Under different constraints described above.
+
+In order to find an optimum point is to have equilibrium between agents, with best response in accordance with purchasing and selling process.
+
+The vector of actions to be taken by each agent will be in two ways, quantity of buys and quantity of sales, where $Q_i$ and $S_i$ represent each action.
+
+The scenario simulation is performed for a year (the data base comes annual) of operation programming, which requires the dispatch of energy to final consumers through traders, whose responsibility is the fulfillment of each dispatch of energy. And other reason is the availability of financial information, because each agent estimates his own financial situation for each accounting period mandatorily, and they publish the results quarterly to ``superintendencia de servicios p\'ublicos" in Colombia.
+
+\subsection{In Brief the model,}
+
+For traders,
+
+\begin{equation}
+Max U_{t,i} = \sum_{i,j=1}^{n}(S_{t,i,j}\times p_{t,i,j} - Q_{t,i,j}\times c_{t,i,j}) + (He_{i} - Ee_{i})\times pb_{t} - OyM_{t,i} - D_{t,i}\times Kd_{t,i}
+\end{equation}
+
+And for producers, 
+
+\begin{equation}
+Max U_{t,i} = \sum_{i,j=1}^{n}(S_{t,i,j}\times p_{t,i,j} - Q_{t,i,j}\times c_{t,i,j}) + CC_{t,i}+(He_{i} - Ee_{i})\times pb_{t} - CG_{t,i}-OyM_{t,i} - D_{t,i}\times Kd_{t,i}
+\end{equation}
+
+Subject to, 
+
+\begin{equation}
+\frac {Ebit_{t,i}} {(D_{t,i} \times kd_{t,i})} \geq 2.5 
+\end{equation}
+
+\begin{equation}
+\frac {D_{t,i}} {Ebit_{t,i}} \leq 4.0
+\end{equation}
+
+\begin{equation}
+VaR1_{t,i}  \leq 10\% \times E_{t,i}
+\end{equation}
+
+\begin{equation}
+VaR2_{t,i}  \leq 20\% \times E_{t,i}
+\end{equation}
+
+\begin{equation}
+\frac {D_{t,i}} {E_{t,i}} \leq 80\%
+\end{equation}
+
+\begin{equation}
+0 \leq DGAP_{t,i}  \leq 1
+\end{equation}
+
+\begin{equation}
+EaR_{t,i}  \leq 5\% \times U_{t,i}
+\end{equation}
+
+\begin{equation}
+EBITaR_{t,i}  \leq 15\% \times EBIT_{t,i}
+\end{equation}
+
+\begin{equation}
+Roce_{t,i}  > Wacc_{t,i}
+\end{equation}
+
+\begin{equation}
+\frac {E_{t,i}} {Risk (Assets)} > 8\%
+\end{equation}
+
+Finally the demand must be realized through the aggregation of different individual demands for each agent.  
+
+\begin{equation}
+\sum Dem_{t,i} = TD_t
+\end{equation}
+
+The model is developed from a trader point of view, but it is possible to consider the point of view of the generator agent's with changes in the equations like generation cost and charge for confiability. The situation of traders is shown in the figure \ref{Fig 24} considering the definitions given by \cite{gnansounou2004}. The agents take all the strategies but the regulator is responsible of stability of the market. Finally the model can be summarized in 4 steps, first of all the inclusion of database with daily, monthly or annual periodicity. Second the calculations and the running of the model in order to find the results to implement the third step or simulations. Finally the optimization comes considering the market outcomes and with the self - learning the agents can take best strategies in next schedules of demand.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig24}  
+\caption{Summarized  of the model}
+\scriptsize 
+\textbf{Source: Considering definitions given by \cite{gnansounou2004}}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 24}
+\end{figure}
+
+The responsibilities of the regulator are control, reglamentation, imposition of guarantees, restrictions, investor protection, controller of price volatility, among others. In this sense, the society and the securing of the dispatch of energy is the central goal of the regulator that usually is a public entity. In the figure number \ref{Fig 25}, the descriptions of the obligations of regulator and duties of the agents are shown. Each agent, no matter the position as a trader, generator, transmitter, or even customer has different positions in front of risk.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig25}  
+\caption{Duties and responsabilities}
+\scriptsize 
+\textbf{Source: XM - Own Calculations}
+\captionsetup{justification=centering,margin=2cm}   
+\label{Fig 25}
+\end{figure}
+
+The description of physical phenomena through the equations described above, can let understand how agents function from the financial point of view, concerning the two main components, which are the inputs and outputs of money. In summary, income statement that includes data from sales and cost needs to ensure operation. In turn, the financial needs associated with debt are part of the resources to be transferred to financial institutions.
+
+The risk is concentrated in the inability to meet their obligations with financial institutions and other agents with whom they have made business. Therefore a thorough assessment of the situation of the other agents is required as part of the process for the removal of systemic risk, it means a risk that breaks system stability in a staggered way.
+
+Risk measures such as solvency, liquidity, DGAP, EaR, EBITaR, indebtedness, coverage, leverage and others will be responsible for controlling and managing risk behavior of companies. Thus, the application of models that allow the integration of risk and determination of market equilibrium, become the main contribution of this research. However to propose a measure the equilibrium, the first step was to understand the complexity arising from transactional system bringing it to mathematical expressions.
+
+
+\bibliography {Biblio}
+\bibliographystyle{plain}
+
+\end{document}

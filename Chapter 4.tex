@@ -1,0 +1,605 @@
+% Chapter 4
+\documentclass[12pt]{book}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=4cm]{geometry}
+\usepackage{natbib}
+\usepackage{multirow}
+\usepackage{caption}
+\begin{document}
+\chapter[Results]{Results presentation, comparison between methodologies used and explanation of financial risk interface }
+\label{Chapter4} % Change X to a consecutive number 
+\ref{Chapter4}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+Possessing measuring elements risks associated with new technologies, it is part of the actual current called financial innovation. Thus in addition to using traditional systems in order to relate the agents by mathematical representations, a platform developed ``in house" is used.
+
+The platform's main objective is the representation mathematical and strategic of the advanced actions by agents from the perspective of financial risk. It is worth noting that the relationship process between agents is done considering the mathematical exposed in chapter 3 in parallel with the restrictions for the operation.
+
+Thanks to this, the analysts responsible for managing the risk unit, they have a comprehensive system that will facilitate the decision-making process because it's carried out under adaptive mechanism. That is, the platform includes the implementation of complex model, and a number of components such as the risk limits represented in colors for ease of interpretation. On the other hand the platform responds to the wish to make adjustments depending on the time interval and finally system size.
+
+Subsequently, considering the database that was used, it will be possible to make substantiated measures by different periods of time, considering the intensity demanded by analysts and by market. Thus the results can be displayed in hourly, daily, weekly, monthly, quarterly, semiannually or annually, depending on the information entered. Even for purposes of strategic projection and planning of the operation, may be considered financial statements estimations, demand forecasting, price projection among others in order to construct the transactional stage in the future.
+
+For such purposes, it is essential to have additional tools in order to improve results. These tools begin with the fundamentals in financial planning that comes from enterprises valuation and corporate finance, associated with estimating the income statements and profitability scenarios. Next, statistical models and those contemplating the use of new technologies associated with the estimation of prices and demand levels, allow to project the size of the risk in the future from the application created.
+
+This chapter presents the results obtained based on the models proposed in Chapter 3 and the methodologies used during the conduct of the investigation. First checking the unstable equilibrium from the financial point of view substantiated on modeling based on game theory, and the inclusion of optimization. Secondly the presentation of the complex model and calculation of equilibrium considering the interactions between agents in parallel with the respective financial constrains. 
+
+Finally, the comparison between the methodologies is made, underlining the advantages for each one from the mathematical point of view, but also the limitations that influence the models.
+
+Each result is obtained considering the information extracted annually from the behavior of the Colombian electricity market, but can replicate any transactional system where agents have a role. Therefore, the relationship between such agents becomes an input variable to determine the complex environment.
+
+\section{Database}
+
+The acquisition of Database, was considering the transactions results from Colombian market, the public information submitted in the XM web page and the financial statements from agents.
+
+General data: The time frame of the study is assumed annually, because the consolidated financial statements from traders have periodicity each year, discount rate considering market risk, interest rate, transactions between traders (purchases, sales), energy prices and demand level. 
+
+Electricity demand: demand for the annual frame (but the model can stand intra-periods, yearly, monthly, weekly); in GWh and distributed in the different agents depending on the disposition and the number of contracts signed by each agent.
+
+Transactions: The transfers between agents are dynamic and the attributes of each transaction consider time, agreed price, quantity and moment of dispatch. The agents can reprogram the operation depending on energy necessities; and finally scheduled maintenance estimation. 
+
+Financial information comes from the agents. They must present financial statements quarterly (balance sheet, profit and losses statement and cash flow statement). Information is public but agents do not calculate risk measures. Projections and forecast of accounts are not an obligation, but in the medium term should be a recommendation.
+
+Discount rate and interest rate are different. The first is the exposition level of agents when liabilities and equity are considered. The second one is the cost of financial obligations contracted by each agent with financial institutions or with the financial market.
+
+\section{Results from game theory modelation}
+
+The amount of equilibrium that every trader will demand for get a market access, is determined by the best response to the strategies that other traders establish. Thereby each agent of the market starting from initial demand levels (at the beginning of the day), programs his own purchases in order to reach the demands of the market operator and fulfill the total demand. It is important to consider that the shortage of energy must be acquired through transactions with their peers; to meet the requirements because of the asset (energy) may not be subject to inventory.
+
+In the Table \ref{table1} it can be identified the equilibrium, each trader should get enough energy after acquiring shortages and sell surpluses. The results using the game theory approximation, estimates the divergence between the practical behavior and theoretical expectations. 
+
+Such amount of energy will be delivered to meet global demand in the proportional importance. In other words, according to the size of the traders compared to general market.
+
+The deviation between Nash equilibrium and simulated demand is achieved because no one considered the financial ability of traders, i.e. the financial risk, that's why the deviation is very high (for example -98.6\% in the first agent). However it can define that the system is in equilibrium because:
+
+\begin{itemize}
+
+\item{The global market demand is satisfied, i.e. fulfilling energy needs in demand by consumers, is done, reaching the demand planning} 
+
+\item{Each trader maximizes his profitability using the trans- actions in the market. It means selling for more than the purchase price, but demanding the maximum capacity that can be purchased, with its own cash flow}
+
+\end{itemize}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{| l | c | c | c | c | c |} 
+\hline
+Item & Agent 1 & Agent 2 & Agent 3 & Agent 4 & Agent 5  \\
+\hline \hline
+Database & 2.535.978 & 3.461.280 & 4.247.833 & 1.058.474 & 6.544.004 \\ \hline
+Nash & 34.515 & 54.661 & 977.747 & 3.282.095 & 1.737.096 \\ \hline
+Deviation & -98.6\% & -98.4\% & -77.0\% & 210.1\% & -73.5\%  \\ \hline
+\hline
+Item & Agent 6 & Agent 7 & Agent 8 & Agent 9 & Agent 10 \\ \hline
+\hline \hline
+Database & 1.463.392 & 1.580.555 & 13.369 & 417.749 & 2.322.658 \\ \hline
+Nash & 4.629.105 & 1.182.221 & 4.092.605 & 6.733.847 & 5.661.230  \\ \hline
+Deviation & 216.3\% & -25.2\% & 30512.2\% & 1511.9\% & 143.7\% \\ \hline
+\hline
+Item & Agent 11 & Agent 12 & Agent 13 & Agent 14 & Agent 15 \\ \hline
+\hline \hline
+Database & 5.420 & 3.603.312 & 3.226.897 & 510.115 & 343.589 \\ \hline
+Nash & 4.957.669 & 3.372.603 & 1.885.519 & 4.116.855 & 1.802.120  \\ \hline
+Deviation & 91369.9\% & -6.4\% & -41.6\% & 707.0\% & 424.5\% \\ \hline
+\hline
+Item & Agent 16 & Agent 17 & Agent 18 & Agent 19 & Agent 20 \\ \hline
+\hline \hline
+Database & 3.040.794 & 1.238.276 & 137.199 & 1.865.075 & 6.683.922 \\ \hline
+Nash & 2.311.517 & 6.583.522 & 6.398.759 & 5.744.196 & 6.691.911  \\ \hline
+Deviation & -24.0\% & 431.7\% & 4563.9\% & 208.0\% & 0.1\% \\ \hline
+\hline
+Item & Agent 21 & Agent 22 & Agent 23 & Agent 24 & Agent 25 \\ \hline
+\hline \hline
+Database & 499.439 & 1.058.540 & 2.175.504 & 1.367.756 & 153.610 \\ \hline
+Nash & 1.297.058 & 3.743.266 & 4.533.851 & 6.600.712 & 4.800.809  \\ \hline
+Deviation & 159.7\% & 253.6\% & 108.4\% & 382.6\% & 3025.3\% \\ \hline
+\hline
+Item & Agent 26 & Agent 27 & Agent 28 & Agent 29 & Agent 30 \\ \hline
+\hline \hline
+Database & 119.679 & 8.746 & 7.227.736 & 18.494 & 2.252.453 \\ \hline
+Nash & 2.816.293 & 5.349.989 & 5.910.638 & 4.341.300 & 619.295  \\ \hline
+Deviation & 2253\% & 61072\% & -18\% & 23374\% & -73\% \\ \hline
+\end{tabular}
+\caption{Results Database Vs. Nash Equilibrium}
+\label{table1}
+\end{center}
+\end{table}
+
+Financially, all transactions are aimed at maximizing the value for the system, given that the total gain is the sum of the profits of the commercialization agents and the profitability of all parties involved is ensured. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig26}  
+\caption{Utility optimization}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 26}
+\end{figure}
+
+The second step consists of modeling maximizing system utilities, to the optimal level of purchases, so the behavior of earnings is as follows. In the figure \ref{Fig 26} is possible to identify the optimization of profits for all the system. Is important emphasize that for 30 agents in this case the optimization of the utility is reached by simulation process.
+
+Prove the equilibrium from a financial point of view is to demonstrate that there are a series of conditions for transactions of buying and selling energy. From elsewhere the conditions must be achieved in order that all the agents will be financially agree, in terms of profitability and ease of implementation its operations in the market \cite{krause2006}. However the equilibrium is unstable by the concept of it and the assumptions underlying the theory of games, particularly the Nash equilibrium, which are \cite{von2009} \cite{axtell1999}: 
+
+\begin{itemize}
+
+\item{Each player's predicted strategy is the best response to the predicted strategies of other players. No incentive to deviate unilaterally. Strategically stable, or even self-enforcing.} 
+
+\end{itemize}
+
+With the above it can be said that the system is in unstable financial equilibrium because \cite{buttler2013}: 
+\begin{itemize}
+
+\item{Does not consider transaction costs and the analysis are done in the light of the hypothesis of efficient markets, where each individual game includes the knowledge of the competitors in depth.} 
+
+\end{itemize}
+
+The results differ from the simulated levels of demand considering historical data, and these quantities are quite significantly. The deviation means that, to achieve the maximization of profits \cite{alos2003}, the system does not consider the financial capacity (capital strength) to meet its obligations in the market. 
+
+It does not set the difficulties that it may face the system if one participant enters a possibility of financial default. Which would generate a chain reaction that affects the financial stability of the operation i.e. inefficiency of the market. 
+
+The rescheduling of the consumption needs require the calculation of equilibrium, in other words the equilibrium is static for a period of programming and the problem should be the revision of the dispatch. 
+
+The figure \ref{Fig 27} shows the evolution for 30 traders and the level of energy demand in order to reach the Nash equilibrium. The solid line presents the levels of demand in equilibrium for optimize the utility, while the dotted line shows the simulated demand levels from historical data. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig27}  
+\caption{Results for 30 agents}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 27}
+\end{figure}
+
+In this work, the impact of risk indicators (key risk indicators) KRI like a solvency, liquidity, earnings at risk, duration GAP, among others, is not contemplated. And the impact it does not consider, because the integration of the system is given by the volume of transactions between agents, under the premise of reaching the demand and better response for the actions of buying and selling energy. 
+
+On the other hand the financial ability of each participant is not decisive for secure the equilibrium of the system. This, given that the most important is the maximization of profits and under no circumstances, will consider the financial capacity by each agent to enter in the market in order to buy or sell energy \cite{tushar2013}. The foregoing, under the assumptions of game theory because the methodology consider the knowledge of the competitor in-depth, and this last consideration turns out to be quite ambiguous in this initial approach. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig28}  
+\caption{Results for 20 agents}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 28}
+\end{figure}
+
+In this exercise, has been considered in parallel, the application of the equilibrium to 20, 10 and 5 randomly traders agents. It found similarly, an important divergence that supports the conclusion of financial instability. These results affirmed that the knowledge of the financial situation of the other participants is insufficient and game theory proposes a deep knowledge from others. Subsequently, the financial level knowledge from the other agents sometimes is affected because the information presented is not so comprehensive and has gaps between periods.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig29}  
+\caption{Results for 10 agents}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 29}
+\end{figure}
+
+Thus, to the extent that the agents are less, the probability to have at least one balance that converges with the historical situation (an agent at equilibrium) decreases drastically. In the figure \ref{Fig 28}, figure \ref{Fig 29} and figure \ref{Fig 30} is possible to evidence that conclusion. It can prove that decisions from equilibrium are quite different in comparison of decisions from historical behavior. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig30}  
+\caption{Results for 5 agents}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 30}
+\end{figure}
+
+Financial default can be understood as the inability to account for its obligations to creditors \cite{whited2006}. In this vein if traders, according to their relative importance, present an event of this type; could generate a domino effect that would affect the stability of the system at all \cite{dobson2007}. 
+
+In case of default, the operator is not responsible for the economic situation faced by traders, and therefore cannot vouch for their financial numbers. In turn, the pending transactions the agent that is in financial difficulties (probability of default) should be covered by another participant in order to respond with the programmed demand, causing the operator will act as the central chamber of counterparty risk, indirectly. 
+
+\section{Complex systems Results}
+
+Following with the second model implemented, after the results founded using game theory, the results using complex systems was considered. In the first model, all the assumptions and the program was developed in MatLab (Annex XXX) but in the second stage, a web application was built in order to present the results and the analysis with a practice way.
+
+We named the platform ``RisKer" because the objective of the research is to propose a methodology integrated which allows the financial innovation way, for risk measures. According to this, the consideration of the equations, constrains, assumptions and the entire model described in chapter 3, was modeled using the platform and the results are shown in an interface for each agent.
+
+\subsection{Implementation of RisKer platform}
+
+We implemented a web platform in order to wrap up the aforementioned core model. The main objective is to provide financial risk management as a service for regulator entities as well as for energy agents in order to control systemic risk. There are two architecture models, test and production. The first test platform uses one virtual server using Nginx as web server and in the same instance we use MySQL as database provider. In the figure \ref{Fig 31} we depict the test implementation architecture.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig31}  
+\caption{Test Architecture}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 31}
+\end{figure}
+
+The production architecture consists into a web server (Nginx) with redundancy using an independent virtual server for each instance. There is one independent database server (MySQL), which is deployed with redundancy as well. An additional fileserver is used for data and configurations backup. The last description is presented in the figure \ref{Fig 32}. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig32}  
+\caption{Production Architecture}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 32}
+\end{figure}
+
+The platform is composed of a landing page that are shown in the figure \ref{Fig 33}, followed by a login authentication, which leads to the main dashboard space according to figure \ref{Fig 34}
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.7 \textwidth]{fig33}  
+\caption{Landing Page}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 33}
+\end{figure}
+
+The main dashboard page provides three tabs. The first one provides the list of energy company agents (traders, generator or distributor as well). A short name is display with a full name display while hovering. The agent display has two modes compact and expanded. The compact model displays the short name and the total energy demand assigned to that agent. The extended model displays the total energy for buy and sell as well as the current prices related to contracts between agents. It can appreciate in figure \ref{Fig 34} and figure \ref{Fig 35} that can collapsed and expand.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.6 \textwidth]{fig34}  
+\caption{Platform Dashboard}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 34}
+\end{figure}
+
+The Agent Details section presents four tabs which display information about: Model forecast, buy and sell amounts, agent interactions with other agents, stock information and Key Risk Indicators (KRI) profile. The last panel displays a global overview of the whole system with corresponding KRIs. The metrics are colored regarding predefined thresholds that will be explained after. The thresholds are graded in four categories: red (critical), yellow (warning), blue (acceptable), green (good) \cite{beasley2010} \cite{sioshansi2002}.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.8 \textwidth]{fig35}  
+\caption{Collapsed/Expanded Agent}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 35}
+\end{figure}
+
+The second main tab depicts each agent interaction with rest of the system. We provide an interactive graph with proportional arrows showing buy/sell relationships as well as total traded energy amounts (figure \ref{Fig 36}). In the general case the model was implemented for n agents, that's way is it possible to see many arrows who represented the business size between agents. But in the second part of the analysis, a simulated market is represented with 6 agents.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.6 \textwidth]{fig36}  
+\caption{Agents Interactions}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 36}
+\end{figure}
+
+A practical platform implementation based on a complex system model to provide risk management and market forecasts related to energy trading agents is proposed. We implemented a proof-of-concept service platform that provides financial risk indicators assessment as well as recommendations for market performance. 
+
+It proposes as futures work, the addition of different optimization models in order to benchmark multiple approaches. The platform will evolve towards an automated system to generate triggers and alarms regarding pre-defined contexts. We consider that automatic data collection and data reporting are key elements to develop and reinforce. Data mining and open data can be also linked to provide useful information in order to increase model robustness and diversity.
+
+Regarding the proposed model, we consider the inclusion of operational exposition variables like climatic variations, availability of energy generators, terrorism attacks, regulation reviews, financial hedges, and international economic perspectives. 
+
+This can provide additional patterns and trends in order to provide more accurate and detailed risk management. The breakthrough that suggests this work, is the possibility of study directly the financial phenomenon implicit in the operations, and synchronizes with operational and macroeconomic developments that result in more robust models for analysis, i.e. comprehensive. 
+
+Thus, with an identification of interactions and impacts, we can avoid affecting the system sustainability, managing a new branch of financial innovation, which is called systemic risk very different from conventionally known systematic risk.
+
+The interface aims to represent the financial behavior of agents from its strictly financial situation, however, the model has the ability to support the inclusion of more elements that nurture, such as operational analysis, internal and external factors. The developed was conducted under java script programming and is as flexible as a web platform that uses a web service as it was described above.
+
+\subsection{Agent's description}
+
+The number of active agents in the Colombian market is approximately 152 including generators (44), transmitters (10), traders (69) and distributors (29). Nevertheless approximately 63\% of market transactions are explained and executed by six agents considered as the most representative. For this reason the found results, consider the representation of a micro electricity market with those participants (6 total) for which financial information is available consolidated with year-end 2015.
+
+There are several ways to represent the interactions between participants in a system or a general market. In general terms the various information exchanges that occur between agents channeled creating interactions \cite{tesfatsion2003}. Thus businesses contracted, trade, business units, joint ventures, alliances, and generally every action involving the flow of data can be transformed into interaction at some point of time.
+
+That said, the numbers related to energy contracts, become the best representation of the interactions. Each agent that has business with similar peers with the aim of achieving the required levels of demand becomes an element that interacts through electric current flows and therefore the cash flows generated.
+
+In that sense, when contracted energy flows are very high, interactions will be crucial because of the amounts. Graphically the agent having more volume business with their counterparts becomes a critical point agent for purposes of systemic risk. This behavior can be evidenced from the figure \ref {Fig 37}, where red arrows represent sales and blue arrows represent the total purchases for one agent from others and viceversa. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.6 \textwidth]{fig37}  
+\caption{Specific relationships}
+\scriptsize 
+\textbf{Source: XM - Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 37}
+\end{figure}
+
+A critical agent is one on which fall the most flows (interactions) and which allows the beginning of many interactions too. They may exist in the case of electricity, critical agents for purchases and sales depending on the position in the market, however the most representative of this behavior is the fulfillment of the demand from all involved in the process \cite{costa2007}. Thus, these important agents (critical agents) have higher responsibilities because one inconvenient related to default or financial failure can generate staggered fail that generates systemic risk to business and the sustainability of the market.
+
+As it was mentioned, in the figure \ref {Fig 37} it is possible to see the interaction of a selected randomly agent with 5 peers, from the financial point of view and it provides businesses contracted. This graphical representation, collected from a randomly chosen agent, considers the amount of information exchange, which are becoming larger and larger depending on the market conditions, and therefore can expose the stability of the system at present and subsequent periods.
+
+Agents have hired the demand at the beginning of the period, therefore they must respond in some cases through purchases from other agents. This level of demand is shown in figure \ref{Fig 38} where everyone establishes energy needs for operation.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig38}  
+\caption{Agents and demand chart}
+\scriptsize 
+\textbf{Source: XM - Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 38}
+\end{figure}
+
+The interactions for their part are detailed in figure \ref{Fig 39}  where is establishes the amount of purchases and sales with each agent and between them. In addition to the price at which such amounts are contracted, which vary from agent to agent according the conditions of contracts (this information is simulated because is confidential) and also considers the historical behavior of the investor, and finally its empirical risk evaluation.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig39}  
+\caption{Agent's interactions and contracted prices}
+\scriptsize 
+\textbf{Source: XM - Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 39}
+\end{figure}
+
+On the other hand the specific overview for each agent, allows having a generalized average risk for different participants. The figure number \ref{Fig 40} shows the risk for each agent and in the figure \ref{Fig 41} is established the risk score from the results of indicators after computing. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig40}  
+\caption{XM - Risk profile for one random agent}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 40}
+\end{figure}
+
+The colors are assigned thanks to the thresholds described in Chapter 2 related to KRI and classified from the results presented by \cite{kaplan1997} \cite{beasley2010} \cite{scandizzo2005}.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig41}  
+\caption{Risk score calculated from indicators}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 41}
+\end{figure}
+
+Table \ref{table 2} shows the colors according to the thresholds ``Stop ligths", using the information of a particular agent, and creating results based on historical information. An agent with a high market share, can concentrate a critical point if at the same time receives and distributes energy flows in important quantities, given that expands the degree of representativeness \cite{beasley2010}.
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{| l | c | c |}
+\hline
+Ratio & Red & Yellow \\
+\hline \hline
+Coverage  & $<$ 2.0 & $\geq$ 2.0 and $\leq$ 2.5  \\ \hline
+Leverage  & $>$ 5.0 & $>$ 4.5 and $\leq$ 5.0  \\ \hline
+VaR1 (Equity)  & $>$ 70\% & $>$ 60\% and $\leq$ 70\% \\ \hline
+VaR1 (Equity)  & $>$ 70\% & $>$ 60\% and $\leq$ 70\% \\ \hline
+SCOB (Equity)  & $>$ 30\% & $>$ 20\% and $\leq$ 30\% \\ \hline
+SCOS (Equity)  & $>$ 30\% & $>$ 20\% and $\leq$ 30\%  \\ \hline
+Fin Leverage  & $>$ 80\% & $>$ 70\% and $\leq$ 80\%  \\ \hline
+DGAP & $>$ 5 & $>$ 3 and $\leq$ 5 \\ \hline
+EaR (Equity) & $>$ 10\% & $>$ 7\% and $\leq$ 10\%  \\ \hline
+EBITaR (Equity) & $>$ 10\% & $>$ 7\% and $\leq$ 10\% \\ \hline
+RoCe & Roce $<$ Wacc & - \\ \hline
+Wacc &  $>$ 20\% & $>$ 15\% and $\leq$ 20\% \\ \hline
+Solvency &  $<$ 1.0 & $\geq$ 1.0 and $\leq$ 2.0 \\ \hline
+Liquidity &  $<$ 1.0 & $\geq$ 1.0 and $\leq$ 2.0 \\ \hline
+\hline \hline
+Ratio & Blue & Green \\
+\hline \hline
+Coverage & $\geq$ 2.5 and $\leq$ 3.0 & $>$ 3.0 \\ \hline
+Leverage  & $\geq$ 4.0 and $\leq$ 4.5 & $<$ 4.0 \\ \hline
+VaR1 (Equity) & $\geq$ 60\% and $\leq$ 50\% & $<$ 50\% \\ \hline
+VaR1 (Equity) & $\geq$ 60\% and $\leq$ 50\% & $<$ 50\% \\ \hline
+SCOB (Equity) & $\geq$ 10\% and $\leq$ 20\% & $<$ 10\% \\ \hline
+SCOS (Equity) & $\geq$ 10\% and $\leq$ 20\% & $<$ 10\% \\ \hline
+Fin Leverage & $\geq$ 50\% and $\leq$ 70\% & $<$ 50\% \\ \hline
+DGAP & $\geq$ 2 and $\leq$ 3 & $<$ 2 \\ \hline
+EaR (Equity) & $\geq$ 5\% and $\leq$ 7\% & $<$ 5\% \\ \hline
+EBITaR (Equity) & $\geq$ 5\% and $\leq$ 7\% & $<$ 5\% \\ \hline
+RoCe & Roce = Wacc & Roce $>$ Wacc \\ \hline
+Wacc & $\geq$ 10\% and $\leq$ 15\% & $<$ 10\% \\ \hline
+Solvency & $>$ 2.0 and $\leq$ 3.0 & $>$ 3.0\\ \hline
+Liquidity & $>$ 2.0 and $\leq$ 3.0 & $>$ 3.0\\ \hline
+\end{tabular}
+\caption{Results Database Vs. Nash Equilibrium }
+\label{table 2}
+\end{center}
+\end{table}
+
+Similarly, label ``General Overview" for comprehensive market, is calculated from the level of relative importance of each agent for transactions and is shown in the figure \ref{Fig 42}. That is, each agent is responsible for a given level of demand and therefore increases its responsibility in terms of the energy they have committed. 
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.6 \textwidth]{fig42}  
+\caption{General overview and general risk position of the market}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 42}
+\end{figure}
+
+In the figure \ref{Fig 43} it is possible to observe the level of relative importance of each agent to represent the market, being EDCC the largest share with 30.39\% of the market demand.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig43}  
+\caption{Relative importance}
+\scriptsize 
+\textbf{Source: XM - Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 43}
+\end{figure}
+
+Interactions meanwhile, are displayed in figure \ref{Fig 44} where for a particular agent the purchases and sales levels are displayed based on historical information from the database. In turn, the size of the arrows determines the volume of contracted energy, whereby a critical point to the agent is generated when performing actions seller. The point refers to the impossibility of advancing energy sales processes with the counterparty without performing a rigorous risk assessment (red arrows).
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.6 \textwidth]{fig37}  
+\caption{Interactions}
+\scriptsize 
+\textbf{Source: XM - Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 44}
+\end{figure}
+
+Thus, assess the financial risk with the agents for which energy is dispatched through sales, it is a necessary process because there may be possibilities of non-payments in the future. This failure can create therefore a domino effect failure that will result in the inattention of energy dispatch \cite{sioshansi2002}, because financial flows can be interrupted, and those flows are necessary for the business operations.
+
+The figure \ref{Fig 45} shows interactions between all participants, represented in purchases and sales of energy to the market that considers the interaction of 6 agents (red lines are sales and blue lines are purchases). Agents who made more purchases are EDCC, EPMC and  CDSC while sellers are ISGC, EMIC and ENDC. Graphically it is possible to establish the concentration of systemic risk to identify those agents that are critical points.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.7 \textwidth]{fig45}  
+\caption{Graphic representation: All market interactions}
+\scriptsize 
+\textbf{Source: XM - Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 45}
+\end{figure}
+
+A failure in the critical points can compromise the entire system if a risk event occurs, through the contagion effect. Therefore the relative importance of each agent against the whole system is a very relevant variable, it means if the agents ENDC, EPMC and ISGC have problems with their counterparts, 93\% of sales transactions are threatened.
+
+\subsection{Optimization}
+
+To optimize the financial model, it is necessary express the KRI depending on the target variable, which is the usefulness of each of the agents and utility of the whole system. Thus the results using the simplex method reach his maximum value within the restrictions defined from the KRI proposed in Chapter 2.
+
+In order to describe de optimization process, the following inequalities are presented in quantity on sales function.
+
+
+\begin{equation}
+S_{t,i,j} \geq \frac{2.5 \times D_{t,i}\times Kd_{t,i} + (Q_{t,i,j}\times c_{t,i,j}) - (He_{i} - Ee_{i})\times pb_{t} + OyM_{t,i}}{p_{t,i,j}}
+\end{equation}
+
+\begin{equation}
+S_{t,i,j} \geq \frac{(Q_{t,i,j}\times c_{t,i,j}) - (He_{i} - Ee_{i})\times pb_{t} + OyM_{t,i} + \frac{D_{t,i}}{4.0}}{p_{t,i,j}}
+\end{equation}
+
+\begin{equation}
+S_{t,i,j} > \frac{Wacc_{t,i} \times E_{t,i} + (Q_{t,i,j}\times c_{t,i,j}) - (He_{i} - Ee_{i})\times pb_{t} + OyM_{t,i}}{p_{t,i,j}}
+\end{equation}
+
+\begin{equation}
+D_{t,i} \leq 80\% \times E_{t,i}
+\end{equation}
+
+The value that throws the implementation of the algorithm is the amount of energy that must be sold, considering the financial conditions of the agents with which business are conducted. That value has as main objective to establish how business should be done without compromising financial market stability. Figure \ref{Fig 46} summarizes the results from the database in contrast to the results given by the model of systemic risk.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig46}  
+\caption{Risk comparison table, sales database and sales model}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 46}
+\end{figure}
+
+Thus, the graph of interaction between agents evolves as follows proposing a more equitable distribution of risk considering the optimizing profits. It may notice from the figure \ref{Fig 47} that the arrows sizes are more uniform because they propose a more equitable way of doing business among participants. With the above, the main purpose is to maintain the financial balance of the system to make it a financially stable, it means in equilibrium.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig47}  
+\caption{Optimizing interactions}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 47}
+\end{figure}
+
+\subsection{Risk Situation}
+
+Regarding the situation of the financial risk of the agents, from the figure \ref{Fig 48} the level of coverage is determined for each of them in comparison to their similar peers. All agents must have an indicator above 2.5x, nevertheless EMIC and EPMC agents would have a level of -1.02x and -2.51x respectively, revealing the materialization of a financial risk, that's why other actors should review their business with these two companies. The weighted average market for coverage located in 5.42x demonstrating that there is no financial risk considering an isolated scenario for coverage ratio.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig48}  
+\caption{Agent's Coverage}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 48}
+\end{figure}
+
+The level of financial leverage itself reveals the same results since the indicator is at -5.2x and -13.0x for the same pair of companies (EMIC and EPMC) that confirms the recommendation of the review all business having with these participants. The figure \ref{Fig 49} sets the level of leverage of each of the agents. Thus, the weighted average market leverage is close to 7.1x and it means the market, as a whole has no financial risk from leverage.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig49}  
+\caption{Agent's Leverage}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 49}
+\end{figure}
+
+On the other hand return on capital employed (ROCE), in contrast to the weighted average cost of capital (WACC) can be seen in the figure \ref{Fig 50}. In this case, companies or agents that generate value are EDCC and ENDC given that their returns outweigh their costs. Other agents are going through a process of financial nonconformity given that over time can approach the deterioration of their financial statements. On weighted average the market has a value of 10.8\% and it means that generally the market is not profitable, additional reason for proposing a new scheme that allows make more efficient business.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig50}  
+\caption{Roce Vs. Wacc}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 50}
+\end{figure}
+
+Finally, the risk concerning to exposure to changes in the interest rate calculated through DGAP it is presented in figure \ref{Fig 51}. Given that when the result is close to zero, there is less exposure, the agent EMIC has minimal exposure compared to its peers. While in general the market weighted average is close to 1.43x allowing define the market does not have a risk representative exposure with respect to interest rates, i.e. does not change the market value of participants in front to changes in the interest rate or in front the perception of risk.
+
+\begin{figure}  
+\centering    
+\includegraphics[width=0.9 \textwidth]{fig51}  
+\caption{Agent's DGAP}
+\scriptsize 
+\textbf{Source: Own calculations}
+\captionsetup{justification=centering,margin=1cm}   
+\label{Fig 51}
+\end{figure}
+
+\subsection{Comparison}
+
+This way, it can perform a comparison with the Nash equilibrium found through game theory because is an unstable equilibrium in view of which does not provide financial interactions between agents. That is, the found equilibrium by modeling based on game theory focuses on meeting the demand by setting the amount of energy purchased in order to satisfy this demand without adding more restrictions than those associated with the market operation (demand, amounts).
+
+Therefore, the second research part through modeling in the complex environment interprets the results from financial combinations and relationships between agents. However it is important to note that the results are intended to ensure the supply of energy from a position of financial equilibrium in a temporary moment. In other words to perform the exercise in another period, it will need to launch the model again and run results.
+
+Finally if is required to make a programing for the next period, incorporating forecast for different variables (financial statements, demand, prices, contracts of energy, among others) will be an important tool for further modeling.
+
+The great contribution of the proposed model is summarized in identifying the amount of exposure through business, that each agent can handle. It means, each agent must evaluate all the options and strategies in order to improve the financial results but with less financial risk exposition. It is important to remark that agents operate in the middle of three elements as liquidity, risk and profitability, which must manage trough using of different tools and Risker platform can be one of them.
+
+In the table \ref{table 3} it is possible to see the differences between the results reached by game theory model and complex model. The deviation could be understood as a result considering constrains in the second case. The deviation is less in some cases but it doesn't mean that results are fairly adjusted; at the end it depends on the financial situation from other agents. 
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{| l | c | c | c |}
+\hline
+Item & Agent 1 & Agent 2 & Agent 3 \\
+\hline \hline
+Deviation Nash & 216.3\%& 30512.2\% & 4563.9\% \\ \hline
+Deviation Complex system & 13466\% & n.a. & -67\%  \\ \hline
+\hline
+Item & Agent 4 & Agent 5 & Agent 6  \\
+\hline \hline
+Deviation Nash  & 108.4\% & -73\% & -77\% \\ \hline
+Deviation Complex system & 10\% & -52\%& -3\% \\ \hline
+\end{tabular}
+\caption{Deviations comparison.}
+\label{table 3}
+\end{center}
+\end{table}
+
+\section{Conclusions and recommendations}
+
+Game theory is a methodology that is supported on a simple concept of interaction between participants. However, this methodology integrates a complex math in order to determine what is not obvious, the equilibrium between the participants. Nevertheless, being a very theoretical interpretation of physical phenomena in view of which is based on very ambitious assumptions as efficiency and knowledge of participants in depth. 
+
+Since not considered KRI (Key Risk Indicators) and the financial capacity of the traders, then, the equilibrium is a financially unstable equilibrium, i.e. for academic purposes can be useful but for practical purposes is unrealistic. It serves to describe the physical phenomena, of how agents interact but when considering variables of financial and economic order does not respond to alerts that are necessary for proper monitoring of operations. 
+
+Financially, the most important issue is that an event of default occurs, and if default is not presented the system is in equilibrium. It is possible to explore other measures to support the equilibrium but from different methodological approaches to game theory, integrating the complexity and risk indicators such as solvency, liquidity, earnings at risk, Ebit at risk, equity at risk, duration Gap and debt management, looking indicators that will work for the system providing early warnings. 
+
+One recommendation in that order is to consider different methodologies for join the game theory and support the assumptions. It means integrate for example complex situations for lift restrictions that exist in the rules of game theory. Thus adjusted results will be more to the complex reality of the market.
+
+
+\bibliography {Biblio}
+\bibliographystyle{plain}
+
+\end{document}
